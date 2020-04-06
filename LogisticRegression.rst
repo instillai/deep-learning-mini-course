@@ -8,7 +8,7 @@ Logistic Regression can be defined as an algorithm for binary classification, wh
 
 **Notation**
 
-(x, y)  input and output of a single training item
+(x, y) |rarr| input and output of a single training item
 x ∈ Rnx  x is a nx dimensional feature vector
 y ∈ {0,1}  y is 0 or 1
 {(x(1), y(1)), (x(2), y(2)),…, (x(m), y(m))}  set of m training items
