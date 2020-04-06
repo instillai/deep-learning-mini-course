@@ -84,6 +84,7 @@ Introduction to Deep Learning
 
 .. _what: What.rst
 .. _why: What.rst
+.. _applications: Applications.rst
 
 .. _dtdoc: docs/source/content/supervised/decisiontrees.rst
 .. _dtcode: code/supervised/DecisionTree/decisiontrees.py
@@ -96,7 +97,7 @@ Introduction to Deep Learning
 +--------------------------------------------------------------------+-------------------------------+
 | Why Deep Learning?                                                 | `Tutorial <why_>`_            |
 +--------------------------------------------------------------------+-------------------------------+
-| Applications                                                       | `Tutorial <dtdoc_>`_          |
+| Applications                                                       | `Tutorial <application_>`_    |
 +--------------------------------------------------------------------+-------------------------------+
 
 
