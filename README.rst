@@ -12,8 +12,6 @@ A Deep Learning Course with PyTorch
       :target: https://www.python.org/
 .. image:: https://img.shields.io/badge/book-pdf-blue.svg
    :target: https://machinelearningmindset.com/wp-content/uploads/2019/06/machine-learning-course.pdf
-.. image:: https://img.shields.io/twitter/follow/machinemindset.svg?label=Follow&style=social
-      :target: https://twitter.com/machinemindset
 
 
 
@@ -214,20 +212,17 @@ If you found this course useful, please kindly consider citing it as below:
 
     @software{amirsina_torfi_2019_3585763,
       author       = {Amirsina Torfi and
-                      Brendan Sherman and
-                      Jay Hopkins and
-                      Eric Wynn and
-                      hokie45 and
-                      Frederik De Bleser and
-                      李明岳 and
-                      Samuel Husso and
-                      Alain},
+                      Samuel Burton and
+                      Matt Robinson and
+                      Andrew Whelan and
+                      Harrison Ellis and
+                      Brendan Bolon},
       title        = {{machinelearningmindset/machine-learning-course: 
                        Machine Learning with Python}},
-      month        = dec,
-      year         = 2019,
-      publisher    = {Zenodo},
+      month        = april,
+      year         = 2020,
+      publisher    = {},
       version      = {1.0},
       doi          = {10.5281/zenodo.3585763},
-      url          = {https://doi.org/10.5281/zenodo.3585763}
+      url          = {}
     }
