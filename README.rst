@@ -82,7 +82,8 @@ Introduction to Deep Learning
 
 .. figure:: _img/intro.png
 
-.. _what: source/introuction/what.rst
+.. _what: What.rst
+.. _why: What.rst
 
 .. _dtdoc: docs/source/content/supervised/decisiontrees.rst
 .. _dtcode: code/supervised/DecisionTree/decisiontrees.py
@@ -93,7 +94,7 @@ Introduction to Deep Learning
 +====================================================================+===============================+
 | What is Deep Learning                                              | `Tutorial <what_>`_           |
 +--------------------------------------------------------------------+-------------------------------+
-| Why Deep Learning                                                  | `Tutorial <dtdoc_>`_          |
+| Why Deep Learning                                                  | `Tutorial <why_>`_            |
 +--------------------------------------------------------------------+-------------------------------+
 | Applications                                                       | `Tutorial <dtdoc_>`_          |
 +--------------------------------------------------------------------+-------------------------------+
