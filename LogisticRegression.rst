@@ -22,6 +22,6 @@ Given x, ŷ describes the probability that y is 1. This is equated as ŷ = P(y =
 
 With logistic regression, we want ŷ\ :sup:`(i)`\ to be as close to y\ :sup:`(i)`\ as possible, and cost functions quantify this accuracy. A loss function is one that describes accuracy of a singular training item whereas a cost function describes the accuracy of the whole training set because the cost is the average loss of all training items. The loss or error function L(ŷ, y) = ½ (ŷ - y)\ :sup:`2`\ does not work well with gradient descent because the graph can create multiple extrema, and we want to work towards a single minimum. Thus being said, the loss function L(ŷ, y) = -(ylog(ŷ) + (1 - y)log(1 - ŷ)) is a much better option because it creates a convex graph, meaning there is one single minimum.
 
-Cost function:  J(w, b) = 1/m ∑\ :sup:`m`\i=0 L(ŷ(i), y(i)) = -1/m ∑mi=0 [ylog(ŷ) + (1 - y)log(1 - ŷ)]
+Cost function:  J(w, b) = 1/m ∑\ :sup:`m`\i=0 L(ŷ(i), y(i)) = -1/m ∑\ :sup:`m`\i=0 [ylog(ŷ) + (1 - y)log(1 - ŷ)]
 
 The goal here is to find parameters w and b that minimize the cost function. This process is called gradient descent and will be discussed in the next section.
