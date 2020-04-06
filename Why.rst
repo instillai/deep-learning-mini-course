@@ -1,25 +1,17 @@
 **********************
-What is Deep Learning?
+Why Deep Learning?
 **********************
 
-----------
-Background
-----------
-Deep learning is a sub-field of the study of machine learning. Deep learning and machine learning are similar in that they both create algorithms that can change themselves without direct user input. The difference between deep learning and machine learning is that deep learning makes use of artificial neural networks with many levels of neurons modeled after the human brain. Deep learning is done through training neural networks with large amounts of data to create/predict outcomes based on a given input. One of the keys to deep learning is having a large amount of data to train the algorithm's neural networks. Training the algorithm with a large data set with inputs and expected outputs allows the neural networks to develop patterns based on the inputs to accurately predict outcomes.
+Why use deep learning rather than machine learning or other predictive algorithms? In recent years deep learning has better performance than other learning algorithms when trained with large data sets.
 
---------------------
-Supervised Learning
---------------------
-The most prevalent and successful task for deep learning is through supervised learning. Supervised learning is done through training neural networks with a set of inputs mapped to a set of outputs, where there can be more than one input for each output. This allows deep learning algorithms to build neural networks with a defined set of predictors. The two main types of data used to train neural networks for deep learning algorithms, *structured data* and *unstructured data*.
+**Data**
 
-**Structured Data**
+Smartphones, social media, and the scale of the internet today has allowed for gathering more data than ever before. Traditional learning algorithms show success in predicting outcomes when trained with data however these learning algorithms do not see increased performance past a certain size of data set. Neural networks showed better performance overtime with larger amounts of data than traditional learning algorithms, however deep learning algorithms with large neural networks showed the greatest increase in performance with access to more data. The access and quantity of data today have made deep learning algorithms the most attractive learning algorithm.
 
-Structured data is data that can found in a databases where there categories are defined with values, one example of this is predicting the success of a student on an exam based on their past grades, hours studied and time slept. Training deep learning algorithms with defined input characteristics by using structured data allow creates a deep learning algorithm that is fast and has high performance. Deep learning algorithms built using structured data have proved successful  when trained using a strong data set.
+**Computation**
 
-**Unstructured Data**
+Another reason for the popularity an use of deep learning is the technological innovations made in the field of computing. Training a deep learning algorithm has historically been a expensive and time consuming process however this costs have been dropping. With stronger processing and computational power deep learning has become more a more viable option than ever before.
 
-Unstructured data is not categorized like structured data but rather data that cannot be displayed in a database with rows and columns. Examples of unstructured data are image or audio files. Deep learning algorithms trained with unstructured data can be used to recognize patterns in the data or to differentiate between parts of the data. When using unstructured data you must define values you are using such as the values and location of pixels in a image. One example of a deep learning algorithm designed for unstructured data is an algorithm that can tell whether a picture contains a cat.
+**Advancements in Algorithms**
 
-**Neural Networks**
-
-One of the key components of deep learning is **neural networks**. Neural Networks are build by the algorithm based on the given inputs and outputs. Neural networks build predictors based on the data by using ReLU functions or Rectified Linear Unit functions. Neural networks use ReLU functions to define correlations between different inputs in predicting the output.
+Deep learning's popularity has also been fueled by advancements in learning algorithms in recent years. With better algorithms for neural networks deep learning algorithms have shown better performance and efficiency than ever before. One example of these advancements is the use of ReLU functions rather than sigmoid functions. ReLU functions have proved more efficient than sigmoid functions by reducing the likelihood of a gradient to vanish, this means ReLU functions allow for the reduced likely hood of a diminishing/vanishing gradient which is a major cause of inefficiency in deep learning algorithms.
