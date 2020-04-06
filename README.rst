@@ -80,7 +80,7 @@ Deep Learning
 Introduction to Deep Learning
 ------------------------------------------------------------
 
-.. figure:: _img/intro.png
+.. figure:: _img/brain1.png
 
 .. _what: What.rst
 .. _why: What.rst
@@ -105,7 +105,7 @@ Introduction to Deep Learning
 Basics
 ------------------------------------------------------------
 
-.. figure:: _img/supervised.gif
+.. figure:: _img/linear.png
 
 
 +--------------------------------------------------------------------+-------------------------------+
