@@ -10,7 +10,7 @@ Logistic Regression can be defined as an algorithm for binary classification, wh
 | x ∈ R\ :sub:`n`\ x --> x is a nx dimensional feature vector
 | y ∈ {0,1} --> y is 0 or 1
 | {(x\ :sup:`(1)`\ , y\ :sup:`(1)`\ ), (x\ :sup:`(2)`\ , y\ :sup:`(2)`\ ),…, (x\ :sup:`(m)`\ , y\ :sup:`(m)`\ )} --> set of m training items
-| X --> capital X defines a n\ :sub: `x`\ by m matrix with columns being x(1), x(2),…, x(m)
+| X --> capital X defines a n\ :sub:`x`\ by m matrix with columns being x\ :sup:`(1)`\ , x\ :sup:`(2)`\,…, x\ :sup:`(m)`\
 | Y --> capital Y defines a 1 by m matrix with columns being y(1), y(2),…, y(m)
 
 **Sigmoid**
