@@ -9,6 +9,7 @@ Logistic Regression can be defined as an algorithm for binary classification, wh
 .. contents::
   :local:
   :depth: 3
+
 -------------
 **Notation**
 -------------
