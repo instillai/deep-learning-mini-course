@@ -108,6 +108,8 @@ Basics
 .. figure:: _img/linear.png
 .. _LogReg: LogisticRegression.rst
 .. _GradDec: gradientDescent.rst
+.. _Dev: DerivativesAndChainRule.rst
+
 
 
 
@@ -118,7 +120,7 @@ Basics
 +--------------------------------------------------------------------+-------------------------------+
 | Derivatives and the Chain Rule                                     |  `Tutorial <GradDec_>`_       | 
 +--------------------------------------------------------------------+-------------------------------+
-| Gradient Descent                                                   |  `Tutorial <GradDec_>`_       |
+| Gradient Descent                                                   |  `Tutorial <Dev_>`_           |
 +--------------------------------------------------------------------+-------------------------------+
 
 
