@@ -1,6 +1,6 @@
--------------------
+*********************
 Logistic Regression
--------------------
+*********************
 
 Logistic Regression can be defined as an algorithm for binary classification, which is a function that outputs either 0 or 1. For example, consider a function that determines if a picture contains a face. The function outputs a 1 if it contains a face or 0 if it does not contain a face. The notation for Logistic regression is described by the following:
 
@@ -11,7 +11,7 @@ Logistic Regression can be defined as an algorithm for binary classification, wh
   :depth: 3
 
 ---------------
-**Notation**
+Notation
 ---------------
 | (x, y) --> input and output of a single training item
 | x ∈ R\ :sub:`n`\ x --> x is a nx dimensional feature vector
@@ -21,14 +21,14 @@ Logistic Regression can be defined as an algorithm for binary classification, wh
 | Y --> capital Y defines a 1 by m matrix with columns being y\ :sup:`(1)`\ , y\ :sup:`(2)`\ ,…, y\ :sup:`(m)`\
 
 --------------
-**Sigmoid**
+Sigmoid
 --------------
 Given x, ŷ describes the probability that y is 1. This is equated as ŷ = P(y = 1 | x) and 0 ≤ ŷ ≤ 1. The parameters w and b where w ∈ R\ :sup:`x`\ and b ∈ R give the sigmoid function ŷ = σ(w\ :sup:`T`\ + b). The sigmoid function’s output spans from 0 to 1 whereas only using ŷ = w\ :sup:`T`\ + b (used for basic linear regression) does not. The function is denoted as σ(z) with z being w\ :sup:`T`\ + b. Looking at the equation in the graph below, the larger the value of z, the closer to 1 the function output will be. The smaller the value of z, the closer to 0 the function output will be.
 
 .. figure:: _img/sigmoid.jpg
 
 ----------------------
-**Cost Functions**
+Cost Functions
 ----------------------
 With logistic regression, we want ŷ\ :sup:`(i)`\ to be as close to y\ :sup:`(i)`\ as possible, and cost functions quantify this accuracy. A loss function is one that describes accuracy of a singular training item whereas a cost function describes the accuracy of the whole training set because the cost is the average loss of all training items. The loss or error function L(ŷ, y) = ½ (ŷ - y)\ :sup:`2`\ does not work well with gradient descent because the graph can create multiple extrema, and we want to work towards a single minimum. Thus being said, the loss function L(ŷ, y) = -(ylog(ŷ) + (1 - y)log(1 - ŷ)) is a much better option because it creates a convex graph, meaning there is one single minimum.
 
