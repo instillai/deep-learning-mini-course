@@ -2,7 +2,7 @@
 Gradient Descent
 -----------------
 
-.. figure:: _img/GradientDescentPic.jpg
+.. figure:: _img/GradientDescentPic.JPG
 
 The gradient descent algorithm is used to train input parameters on a set of data. The goal here is to find the optimal values of the parameters that result in a minimization of the cost function. Each iteration of gradient descent will bring the output of the cost function lower until reaching the minimal point.
 
