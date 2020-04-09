@@ -193,7 +193,7 @@ We are looking forward to your kind feedback. Please help us to improve this ope
 For contribution, please create a pull request and we will investigate it promptly. Once again, we appreciate
 your kind feedback and support.
 
-Please feel free to contact us at deeplearningmindset@gmail.com for any feedback, questions, and concerns.
+Please feel free to contact us at wandrew8@vt.edu for any feedback, questions, and concerns.
 
 
 ========================
