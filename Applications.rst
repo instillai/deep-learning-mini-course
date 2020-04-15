@@ -34,7 +34,7 @@ Data collected on users based on their search history, social media, and online 
 **Natural Language Processing**
 --------------------------------
 
-Deep Learning algorithms can be used to translate from speech to text by being trained to recognize the english language. This is used in many of today's voice recognition softwares.
+Another common use of deep learning technology is for Natural Language Processing. Natural language processing is converting converting speech into text. Natural language processing is done by training neural networks with audio files and transcribed text to build neural networks that can accurately and efficiency convert speech to text. This technology is used across many different industries and has many different applications. One of the most profound applications is in voice recognition software like the voice recognition software used by Amazon's Alexa. Amazon sends the audio of a request made to an Alexa to their servers where is it converted to text and analyzed using their deep learning algorithms.
 
 ---------------------
 **Computer Vision**
@@ -51,3 +51,4 @@ Data can collected on users based on their search history, social media, and onl
 1. https://www.tesla.com/autopilotAI
 2. https://healthitanalytics.com/features/what-is-deep-learning-and-how-will-it-change-healthcare
 3. https://www.marketingaiinstitute.com/blog/ai-in-advertising
+4. https://www.wired.com/story/amazon-alexa-2018-machine-learning/
