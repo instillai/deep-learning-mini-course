@@ -108,3 +108,8 @@ References
 - https://pytorch.org/docs/stable/torchvision/datasets.html#mnist
 - Image Source: logistic_regression.htm
 - This tutorial is based off of the above links.
+
+
+
+.. _simpleLogCode: logisticregression.py
+`Full Code <simpleLogCode_>`_ 
