@@ -37,3 +37,6 @@ One of the key components of deep learning is **neural networks**. Neural Networ
 --------------------
 References
 --------------------
+1. https://www.coursera.org/specializations/deep-learning
+2. https://machinelearningmastery.com/what-is-deep-learning/
+3. http://neuralnetworksanddeeplearning.com/
