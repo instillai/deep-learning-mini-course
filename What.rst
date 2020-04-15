@@ -43,4 +43,3 @@ References
 2. https://machinelearningmastery.com/what-is-deep-learning/
 3. http://neuralnetworksanddeeplearning.com/
 
-`Next Section <why_>`_
