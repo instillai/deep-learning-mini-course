@@ -29,3 +29,4 @@ Deep learning's popularity has also been fueled by advancements in learning algo
 References
 --------------
 1. https://www.coursera.org/specializations/deep-learning
+2. https://machinelearningmastery.com/what-is-deep-learning/
