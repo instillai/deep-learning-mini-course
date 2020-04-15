@@ -6,7 +6,7 @@ Applications of Deep Learning
 ##################
 .. contents::
   :local:
-  :depth: 6
+  :depth: 7
 
 Deep learning has grown is popularity as we have more access to data, more powerful computation, and advancements in algorithms. Companies have used deep learning to solve labor intensive problems and develop new technologies never before seen. In this section we will cover six applications of deep learning that can be seen today.
 
@@ -41,6 +41,12 @@ Another common use of deep learning technology is for Natural Language Processin
 --------------------
 
 Companies use deep learning to better improve their customer service experience. Using chat bot's has allowed companies to save resources while still offering customers the same customer service experience. Customer service chat bots are deep learning algorithms trained using text from past customer service experiences to answer questions or solve customers problems without having to wait to speak to a representative.
+
+--------------------
+**Fraud Detection**
+--------------------
+
+Deep learning has been used in detecting finical and credit card fraud. Training neural networks with data depicting finical fraud has allowed for deep learning algorithms that can detect fraud in real time. Rather than having people spend time going over finical transactions, deep learning algorithms can detect potential cases of fraud by going through lager amounts of data all at once. This algorithms can also detect fraud that may have been missed by a human by detecting very subtle predictors.
 
 
 
