@@ -52,3 +52,4 @@ Companies use deep learning to better improve their customer service experience.
 2. https://healthitanalytics.com/features/what-is-deep-learning-and-how-will-it-change-healthcare
 3. https://www.marketingaiinstitute.com/blog/ai-in-advertising
 4. https://www.wired.com/story/amazon-alexa-2018-machine-learning/
+5. https://hackernoon.com/deep-learning-chatbot-everything-you-need-to-know-r11jm30bc
