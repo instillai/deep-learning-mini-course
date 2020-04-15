@@ -7,6 +7,10 @@ Logistic Regression Code Documentation
 .. contents::
   :local:
   :depth: 5
+  
+Logistic regression is used to predict the categorical dependent variable with the help of one or more independent variables. The output of a logistic regression function can only be represented by a number between 0 and 1 and is represented by a sigmoid function.
+
+.. figure:: img_regression_code/10.PNG
 
 ----------------------------
 Step 0: Import libraries
@@ -77,11 +81,17 @@ The final step in this linear regression is to train the regression model. Durin
 Example Output
 -------------------------------------
 This shows an output from one of our executions. The results display that after each set of 100 iterations, our logistic regression model becomes more accurate, which was the ultimate goal of the model.
+
 Iteration: 100. Loss: 2.2325596809387207. Accuracy: 20
+
 Iteration: 200. Loss: 2.1107139587402344. Accuracy: 33
+
 Iteration: 300. Loss: 2.03490948677063. Accuracy: 47
+
 Iteration: 400. Loss: 1.9995723962783813. Accuracy: 57
+
 Iteration: 500. Loss: 1.884688138961792. Accuracy: 64
+
 Iteration: 600. Loss: 1.8383146524429321. Accuracy: 68
 
 
