@@ -36,10 +36,11 @@ One of the key components of deep learning is **neural networks**. Neural Networ
 
 Neural Networks build predictors based on the data by using ReLU functions or Rectified Linear Unit functions. Neural networks use ReLU functions to define correlations between different inputs in predicting the output.
 
-`Next Section <why_>`
 --------------------
 References
 --------------------
 1. https://www.coursera.org/specializations/deep-learning
 2. https://machinelearningmastery.com/what-is-deep-learning/
 3. http://neuralnetworksanddeeplearning.com/
+
+`Next Section <why_>`_
