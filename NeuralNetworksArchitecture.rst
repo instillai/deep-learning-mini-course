@@ -45,12 +45,14 @@ Step 2: Scaling
 --------------------------------
 Now that we have our data, we must scale it in order to make sure that our data is in a proper format to train our network.
 
+.. figure:: _img_simple_code/2.PNG
 
 ---------------------------------
 Step 3: Model (Computation Graph)
 ---------------------------------
 When writing any simple neural network using PyTorch, it is recommended to define our model via a class. Our class header contains the name of the class and the parameter, which together define that we are creating a neural network. We then initialize our neural network. 
 
+.. figure:: _img_simple_code/3.PNG
 
 -------------------------------------
 Step 4: Forward Pass/Backpropagation
@@ -61,18 +63,21 @@ The forward function is where the data is entered and fed into the computation g
 
 The backpropagation function is used to minimize loss with respect to our weights when training.
 
+.. figure:: _img_simple_code/4.PNG
 
 -------------------------------------
 Step 5: Helper Functions
 -------------------------------------
 Below are functions that represent in code we we have discussed earlier in this course, such as the sigmoid function. These are used in the forward pass. 
 
+.. figure:: _img_simple_code/5.PNG
 
 -------------------------------------
 Step 6: Train
 -------------------------------------
 Now that we have created our model, all that is left to do is train it and make a prediction!
 
+.. figure:: _img_simple_code/6.PNG
 
 
 This tutorial was inspired by the tutorial provided at https://medium.com/dair-ai/a-simple-neural-network-from-scratch-with-pytorch-and-google-colab-c7f3830618e0 created by Elvis on August 13, 2018. 
