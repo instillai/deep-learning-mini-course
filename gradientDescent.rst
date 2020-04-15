@@ -24,5 +24,5 @@ What you are doing is updating w based on the partial derivative, or slope, in t
 
 
 .. _simpleNN: NeuralNetworksArchitecture.rst
-`Next Section: Why Deep Learning? <simpleNN_>`_ 
+`Next Section: Simple Neural Networks <simpleNN_>`_ 
 
