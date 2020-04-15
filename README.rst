@@ -202,15 +202,6 @@ your kind feedback and support.
 
 Please feel free to contact any of the developers for any feedback, questions, and concerns.
 
-
-========================
-Image Sources
-========================
-1. https://www.clipart.email/clipart/cartoon-simple-clipart-brain-392244.html
-2. https://towardsdatascience.com/machine-learning-fundamentals-ii-neural-networks-f1e7b2cb3eef
-3. https://en.wikipedia.org/wiki/Linear_algebra
-4. https://stockadobe.com/184422188
-
 ========================
 Developers
 ========================
@@ -237,6 +228,15 @@ Developers
 Supervised and supported by [`Machine Learning Mindset <https://machinelearningmindset.com/>`_].
 
 \*: equally contributed
+
+========================
+Image Sources
+========================
+1. https://www.clipart.email/clipart/cartoon-simple-clipart-brain-392244.html
+2. https://towardsdatascience.com/machine-learning-fundamentals-ii-neural-networks-f1e7b2cb3eef
+3. https://en.wikipedia.org/wiki/Linear_algebra
+4. https://stockadobe.com/184422188
+
 
 ======================
 Citation
