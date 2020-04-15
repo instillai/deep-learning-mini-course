@@ -66,7 +66,7 @@ The backpropagation function is used to minimize loss with respect to our weight
 .. figure:: _img_simple_code/4.PNG
 
 -------------------------------------
-Step 5: Helper Functions
+Step 5: Activation Functions
 -------------------------------------
 Below are functions that represent in code we we have discussed earlier in this course, such as the sigmoid function. These are used in the forward pass. 
 
