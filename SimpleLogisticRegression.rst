@@ -15,7 +15,11 @@ Import the PyTorch libraries needed to train a logistic regression model. We als
 which is a package that consists of popular datasets and image transformations for computer vision.
 
 
-.. figure:: _img_regression_code/0.PNG
+# Import all the packages
+import torch
+import torch.nn as nn
+import torchvision.datasets as dSets
+import torchvision.transforms as transforms
 
 --------------------------------
 Step 1: Create Dataset
