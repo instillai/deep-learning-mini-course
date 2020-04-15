@@ -81,3 +81,12 @@ Now that we have created our model, all that is left to do is train it and make 
 
 
 This tutorial was inspired by the tutorial provided at https://medium.com/dair-ai/a-simple-neural-network-from-scratch-with-pytorch-and-google-colab-c7f3830618e0 created by Elvis on August 13, 2018. 
+
+
+.. _nnCode: simpleneuralnetwork.py
+`Full Code <nnCode_>`_
+
+.. _simpleLog: SimpleLogisticRegression.rst
+`Next Section: Simple Logistic Regression <simpleLog_>`_ 
+
+
