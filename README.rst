@@ -113,6 +113,7 @@ Basics
 .. _architecture: NeuralNetworksArchitecture.rst
 .. _architecturecode: simpleneuralnetwork.py
 
+.. _regression: SimpleLogisticRegression.rst
 .. _regressioncode: logisticregression.py
 
 
@@ -131,7 +132,7 @@ Basics
 +====================================================================+===============================+================================+
 | Simple Neural Networks                                             | `Code <architecturecode_>`_   | `Tutorial <architecture_>`_    |
 +--------------------------------------------------------------------+-------------------------------+--------------------------------+
-| Simple Logistic Regression                                         | `Code <regressioncode_>`_     |                                | 
+| Simple Logistic Regression                                         | `Code <regressioncode_>`_     | `Tutorial <regression_>`_      | 
 +--------------------------------------------------------------------+-------------------------------+--------------------------------+
 
 ------------------------------------------------------------
