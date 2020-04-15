@@ -32,3 +32,8 @@ References
 --------------
 1. https://www.coursera.org/specializations/deep-learning
 2. https://machinelearningmastery.com/what-is-deep-learning/
+
+
+.. _Applications: Applications.rst
+`Next Section: Applications <Applications_>`_ 
+
