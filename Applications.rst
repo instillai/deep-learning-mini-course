@@ -10,7 +10,6 @@ Applications of Deep Learning
 
 ----------------------
 **Self-driving Cars**
-
 ----------------------
 
 Self driving cars have been under development over the last 100 years with the first semi-autonomous car experiment taking place in the 1920's. Since then there have been many different experiments done, however only with advancements in deep learning technology in the past few years have we seen successful autonomous driving cars. One of the companies at the forefront of self-driving cars is Tesla. Tesla has used deep learning neural networks trained with raw data taken from an array of sensors and cameras on their cars to train an neural networks with 48 networks that took 70,000 GPU hours to train. Their deep learning network outputs 1,000 distinct predictors to analyze at each time step. Using deep learning Tesla is able to create autonomous driving vehicles that are continuously learning while on the road.
