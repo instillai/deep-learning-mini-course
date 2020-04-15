@@ -27,7 +27,6 @@ The architecture that is behind neural networks is always fairly straightforward
 that are used for getting more accurate predictions in specific scenarios, they all involve input nodes and an output node, or "neuron". The input neurons take data about a scenario, and multiple layers on the "inside" of the network calculate what the outcome will be. What makes a neural network "deep" is when there are more than a single layer of neurons between the input and output neurons, as can be seen below. 
 
 .. figure:: _img/neuralnetwork.jpeg
-.. figure:: _img_simple_code/1.PNG
 
 ================================
 Code for a Simple Neural Network
@@ -37,7 +36,8 @@ To begin writing code with the PyTorch library, it is important to ensure that y
 --------------------------------
 Step 1: Data
 --------------------------------
-The first step in writing code to create any neural network is to either create or import the data that is going to be used to train your model. In this case, we will be creating our own training and test data. The X tensor below represents an individuals age and weight as the input to our network, and the Y tensor represents the maximum speed that the individual can run in MPH, the output. xPredicted is what we will use to test our neural network after it has been trained. 
+The first step in writing code to create any neural network is to either create or import the data that is going to be used to train your model. In this case, we will be creating our own training and test data. The X tensor below represents an individuals age and weight as the input to our network, and the Y tensor represents the maximum speed that the individual can run in MPH, the output. xPredicted is what we will use to test our neural network after it has been trained.
+
 .. figure:: _img_simple_code/1.PNG
 
 --------------------------------
