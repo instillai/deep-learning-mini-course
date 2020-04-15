@@ -28,7 +28,7 @@ The healthcare industry has many different applications for deep learning howeve
 **Advertising**
 -----------------
 
-Data can collected on users based on their search history, social media, and online tendencies has allowed for better prediction than ever before of a person's interests. Advertising companies can use deep learning to provide targeted advertising for users based on their interests but can also predict the types of advertisements they might be interested in based on the data gathered from people with similar traits. Advertising companies that use deep learning are able to increase their revenue and reduce costs by analyzing and taking action on data on a large scale without direct input. They are also able to gain a competitive advantage over other companies by having a greater prediction capabilities and better speed than the competition.
+Data collected on users based on their search history, social media, and online tendencies has allowed for better prediction than ever before of a person's interests. Advertising companies can use deep learning to provide targeted advertising for users based on their interests but can also predict the types of advertisements they might be interested in based on the data gathered from people with similar traits. Advertising companies that use deep learning are able to increase their revenue and reduce costs by analyzing and taking action on data on a large scale without direct input. They are also able to gain a competitive advantage over other companies by having a greater prediction capabilities and better speed than the competition.
 
 --------------------------------
 **Natural Language Processing**
