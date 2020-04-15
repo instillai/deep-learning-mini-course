@@ -62,21 +62,18 @@ Being new to building neural networks, these concepts can be hard to grasp, and 
 The forward function is where the data is entered and fed into the computation graph. This function performs linear calculations to obtain an output for our netowrk.
 
 The backpropagation function is used to minimize loss with respect to our weights when training.
-.. figure:: _img_simple_code/4.PNG
 
 
 -------------------------------------
 Step 5: Helper Functions
 -------------------------------------
 Below are functions that represent in code we we have discussed earlier in this course, such as the sigmoid function. These are used in the forward pass. 
-.. figure:: _img_simple_code/5.PNG
 
 
 -------------------------------------
 Step 6: Train
 -------------------------------------
 Now that we have created our model, all that is left to do is train it and make a prediction!
-.. figure:: _img_simple_code/6.PNG
 
 
 
