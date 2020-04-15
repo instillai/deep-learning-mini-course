@@ -204,11 +204,6 @@ Please feel free to contact us at wandrew8@vt.edu for any feedback, questions, a
 Developers
 ========================
 
-**Creator**: Machine Learning Mindset [`Blog
-<https://machinelearningmindset.com/blog/>`_, `GitHub
-<https://github.com/machinelearningmindset>`_, `Twitter
-<https://twitter.com/machinemindset>`_]
-
 **Supervisor**: Amirsina Torfi [`GitHub
 <https://github.com/astorfi>`_, `Personal Website
 <https://astorfi.github.io/>`_, `Linkedin
