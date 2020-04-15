@@ -20,12 +20,12 @@ Smartphones, social media, and the scale of the internet today has allowed for g
 -----------------
 **Computation**
 -----------------
-Another reason for the popularity and use of deep learning is the technological innovations made in the field of computing. Training a deep learning algorithm has historically been an expensive and time consuming process. However, the costs of implementation, use, and training have been dropping. With stronger processing and computational power deep learning has become more a more viable option than ever before.
+Another reason for the popularity and use of deep learning is the technological innovations made in the field of computing. Training a deep learning algorithm has historically been an expensive and time consuming process. However, the costs of implementation, use, and training have been dropping. With stronger processing and computational power, deep learning has become more a more viable option than ever before.
 
 --------------------------------
 **Advancements in Algorithms**
 --------------------------------
-Deep learning's popularity has also been fueled by advancements in learning algorithms in recent years. With better algorithms for neural networks deep learning algorithms have shown a vast improvement in performance and efficiency. One example of these advancements is the use of ReLU functions rather than sigmoid functions. ReLU functions have proved more efficient than sigmoid functions by reducing the likelihood of a gradient to vanish which is a major cause of inefficiency in deep learning algorithms.
+Deep learning's popularity has also been fueled by advancements in learning algorithms in recent years. With better algorithms for neural networks, deep learning algorithms have shown a vast improvement in performance and efficiency. One example of these advancements is the use of ReLU functions rather than sigmoid functions. ReLU functions have proved more efficient than sigmoid functions by reducing the likelihood of a gradient to vanish which is a major cause of inefficiency in deep learning algorithms.
 
 --------------
 References
