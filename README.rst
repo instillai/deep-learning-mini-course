@@ -200,7 +200,7 @@ We are looking forward to your kind feedback. Please help us to improve this ope
 For contribution, please create a pull request and we will investigate it promptly. Once again, we appreciate
 your kind feedback and support.
 
-Please feel free to contact us at wandrew8@vt.edu for any feedback, questions, and concerns.
+Please feel free to contact any of the developers for any feedback, questions, and concerns.
 
 
 ========================
@@ -214,6 +214,19 @@ Image Sources
 ========================
 Developers
 ========================
++-------------------+---------------------+
+| Developers        | Email               |
++===================+=====================+
+| Sam Burton        | samb7@vt.edu        |
++-------------------+---------------------+
+| Matt Robinson     | rmatt21@vt.edu      | 
++-------------------+---------------------+
+| Andrew Whelan     | wandrew8@vt.edu     |
++-------------------+---------------------+
+| Harrison Ellis    | harry16@vt.edu      |
++-------------------+---------------------+
+| Brendan Bolon     | brendb98@vt.edu     |
++-------------------+---------------------+
 
 **Supervisor**: Amirsina Torfi [`GitHub
 <https://github.com/astorfi>`_, `Personal Website
