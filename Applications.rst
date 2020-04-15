@@ -8,6 +8,8 @@ Applications of Deep Learning
   :local:
   :depth: 6
 
+Deep learning has grown is popularity as we have more access to data, more powerful computation, and advancements in algorithms. Companies have used deep learning to solve labor intensive problems and develop new technologies never before seen. In this section we will cover ten applications of deep learning that can be seen today.
+
 ----------------------
 **Self-driving Cars**
 ----------------------
