@@ -8,6 +8,9 @@ Logistic Regression Code Documentation
   :local:
   :depth: 5
   
+----------------------------
+Overview
+----------------------------
 Logistic regression is used to predict the categorical dependent variable with the help of one or more independent variables. The output of a logistic regression function can only be represented by a number between 0 and 1 and is represented by a sigmoid function.
 
 .. figure:: img_regression_code/10.PNG
@@ -103,3 +106,4 @@ References
 - https://towardsdatascience.com/logistic-regression-on-mnist-with-pytorch-b048327f8d19
 - https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_logistic_regression/
 - https://pytorch.org/docs/stable/torchvision/datasets.html#mnist
+- Image Source: logistic_regression.htm
