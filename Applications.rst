@@ -59,3 +59,4 @@ Deep learning has been used in detecting finical and credit card fraud. Training
 3. https://www.marketingaiinstitute.com/blog/ai-in-advertising
 4. https://www.wired.com/story/amazon-alexa-2018-machine-learning/
 5. https://hackernoon.com/deep-learning-chatbot-everything-you-need-to-know-r11jm30bc
+6. https://www.altexsoft.com/whitepapers/fraud-detection-how-machine-learning-systems-help-reveal-scams-in-fintech-healthcare-and-ecommerce/
