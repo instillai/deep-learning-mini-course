@@ -27,7 +27,7 @@ The architecture that is behind neural networks is always fairly straightforward
 that are used for getting more accurate predictions in specific scenarios, they all involve input nodes and an output node, or "neuron". The input neurons take data about a scenario, and multiple layers on the "inside" of the network calculate what the outcome will be. What makes a neural network "deep" is when there are more than a single layer of neurons between the input and output neurons, as can be seen below. 
 
 .. figure:: _img/neuralnetwork.jpeg
-
+.. figure:: _img_simple_code/1.PNG
 
 ================================
 Code for a Simple Neural Network
@@ -44,14 +44,12 @@ The first step in writing code to create any neural network is to either create 
 Step 2: Scaling
 --------------------------------
 Now that we have our data, we must scale it in order to make sure that our data is in a proper format to train our network.
-.. figure:: _img_simple_code/2.PNG
 
 
 ---------------------------------
 Step 3: Model (Computation Graph)
 ---------------------------------
 When writing any simple neural network using PyTorch, it is recommended to define our model via a class. Our class header contains the name of the class and the parameter, which together define that we are creating a neural network. We then initialize our neural network. 
-.. figure:: _img_simple_code/3.PNG
 
 
 -------------------------------------
