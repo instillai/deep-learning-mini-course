@@ -36,11 +36,11 @@ Data collected on users based on their search history, social media, and online 
 
 Another common use of deep learning technology is for Natural Language Processing. Natural language processing is converting converting speech into text. Natural language processing is done by training neural networks with audio files and transcribed text to build neural networks that can accurately and efficiency convert speech to text. This technology is used across many different industries and has many different applications. One of the most profound applications is in voice recognition software like the voice recognition software used by Amazon's Alexa. Amazon sends the audio of a request made to an Alexa to their servers where is it converted to text and analyzed using their deep learning algorithms.
 
----------------------
-**Computer Vision**
----------------------
+--------------------
+**Customer Service**
+--------------------
 
-Data can be collected on users based on their search history, social media, and online tendencies has allowed for better prediction than ever before of a person's interests. Advertising companies can use deep learning to provide targeted advertising for users based on their interests but can also predict the types of advertisements they might be interested in based on the data gathered from people with similar traits. Advertising companies that use deep learning are able to increase their revenue and reduce costs by analyzing and taking action on data on a large scale without direct input. They are also able to gain a competitive advantage over other companies by having a greater prediction capabilities and better speed than the competition.
+Companies use deep learning to better improve their customer service experience. Using chat bot's has allowed companies to save resources while still offering customers the same customer service experience. Customer service chat bots are deep learning algorithms trained using text from past customer service experiences to answer questions or solve customers problems without having to wait to speak to a representative.
 
 
 
