@@ -6,7 +6,7 @@ What is Deep Learning?
 ##################
 .. contents::
   :local:
-  :depth: 5
+  :depth: 6
 
 -----------
 Background
@@ -33,3 +33,7 @@ Unstructured data is not categorized like structured data but rather data that c
 Neural Networks
 --------------------
 One of the key components of deep learning is **neural networks**. Neural Networks are build by the algorithm based on the given inputs and outputs. Neural networks build predictors based on the data by using ReLU functions or Rectified Linear Unit functions. Neural networks use ReLU functions to define correlations between different inputs in predicting the output.
+
+--------------------
+References
+--------------------
