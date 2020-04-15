@@ -107,3 +107,4 @@ References
 - https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_logistic_regression/
 - https://pytorch.org/docs/stable/torchvision/datasets.html#mnist
 - Image Source: logistic_regression.htm
+- This tutorial is based off of the above links.
