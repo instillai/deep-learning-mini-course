@@ -14,12 +14,7 @@ Step 0: Import libraries
 Import the PyTorch libraries needed to train a logistic regression model. We also needed to import torchvision, 
 which is a package that consists of popular datasets and image transformations for computer vision.
 
-
-# Import all the packages
-import torch
-import torch.nn as nn
-import torchvision.datasets as dSets
-import torchvision.transforms as transforms
+.. figure:: _img_regression_code/0.PNG
 
 --------------------------------
 Step 1: Create Dataset
@@ -74,6 +69,9 @@ The final step in this linear regression is to train the regression model. Durin
 
 .. figure:: _img_regression_code/7.PNG
 
+.. figure:: _img_regression_code/8.PNG
+
+.. figure:: _img_regression_code/9.PNG
 
 -------------------------------------
 Example Output
