@@ -20,3 +20,9 @@ The notation “:=” means update, α is the learning rate or how big of a step
 | b:= b - α ∂J(w, b)/∂b
 
 What you are doing is updating w based on the partial derivative, or slope, in the w direction and updating b based on the partial derivative, or slope, in the b direction. When writing code, ∂J(w, b)/∂w is denoted as dw and ∂J(w, b)/∂b is denoted as db.
+
+
+
+.. _simpleNN: NeuralNetworksArchitecture.rst
+`Next Section: Why Deep Learning? <simpleNN_>`_ 
+
