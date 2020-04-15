@@ -43,3 +43,6 @@ References
 2. https://machinelearningmastery.com/what-is-deep-learning/
 3. http://neuralnetworksanddeeplearning.com/
 
+.. _why: Why.rst
+`Next Section: Why Deep Learning? <why_>`_ 
+
