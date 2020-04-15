@@ -40,7 +40,7 @@ Deep Learning algorithms can be used to translate from speech to text by being t
 **Computer Vision**
 ---------------------
 
-Deep Learning algorithms can be trained to recognize what objects are in images. This is applicable to industries such as self-driving vehicles, allowing cars to "see" and "understand" their surroundings.
+Data can collected on users based on their search history, social media, and online tendencies has allowed for better prediction than ever before of a person's interests. Advertising companies can use deep learning to provide targeted advertising for users based on their interests but can also predict the types of advertisements they might be interested in based on the data gathered from people with similar traits. Advertising companies that use deep learning are able to increase their revenue and reduce costs by analyzing and taking action on data on a large scale without direct input. They are also able to gain a competitive advantage over other companies by having a greater prediction capabilities and better speed than the competition.
 
 
 
@@ -50,3 +50,4 @@ Deep Learning algorithms can be trained to recognize what objects are in images.
 
 1. https://www.tesla.com/autopilotAI
 2. https://healthitanalytics.com/features/what-is-deep-learning-and-how-will-it-change-healthcare
+3. https://www.marketingaiinstitute.com/blog/ai-in-advertising
