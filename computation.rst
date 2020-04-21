@@ -10,3 +10,9 @@ When computing a neural network, this logistic regression computation is repeate
 
 .. figure:: _img/computation2.jpg
 
+
+Computing loss and implementing gradient descent will be done in a way similar to the right to left (or “backwards) calculation as discussed in the basics module. With logistic regression, we found dw and db (the derivative of parameters w and b) by computing da to then compute dz which was then used to arrive at dw and db. In a neural network, you will want to do it for each layer. For example, start by computing da\ :sup:`[2]`\ followed by computing  dz\ :sup:`[2]`\ which can then be used to find dw\ :sup:`[2]`\ and db\ :sup:`[2]`\. This will be discussed further in the backpropagation tutorial.
+
+
+
+
