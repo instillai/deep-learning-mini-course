@@ -6,7 +6,7 @@ Activation Functions
 Activation functions are used in deep learning between the layers of a neural network to build correlations between inputs and outputs. The higher the output of the activation functions for a neuron the more weight is added to the neuron and is passed to the next layer. Activation functions are used to train the layers in neural networks. There are many different activation functions that can be used which are shown in the figure below.
 
 
-.. figure:: _img/activationfunctions.png
+.. figure:: _img/activationFunctions.png
 
 
 
