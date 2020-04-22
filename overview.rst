@@ -8,5 +8,5 @@ A neural network is a system that consists of layers of nodes which activate at 
 .. figure:: _img/overview.png
 
 
-**References**
-https://www.coursera.org/
+| **References**
+| https://www.coursera.org/
