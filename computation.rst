@@ -16,7 +16,7 @@ Computing loss and implementing gradient descent will be done in a way similar t
 
 
 **Sources**
-
+https://www.coursera.org/
 
 
 
