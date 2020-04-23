@@ -13,11 +13,11 @@ When performing gradient descent, backpropagation is used to determine how you c
 ---------------
 Sigmoid Review
 ---------------
-.. figure:: _img/sigmoid.jpg
+.. figure:: _img/sigmoid.JPG
 
 As discussed in the Linear Regression tutorial, the sigmoid function is a = σ(z), where z = w\ :sup:`T`\x+ b. The following describes the derivation of this function:
 
-.. figure:: _img/backpropagation1.jpg
+.. figure:: _img/backpropagation1.JPG
 
 Here we can see that da/dz = a (1 – a).
 
