@@ -25,4 +25,15 @@ L1 Regularization
 
 .. figure:: _img/L1.1.PNG
 
+Using the scalar α we create a new loss function shown below. α is defined as the regularization rate, in other words α is used to determine how much we plan to regularize the model.
+
+.. figure:: _img/L1.2.PNG
+
+Taking the updated loss function and computing the gradient we can update the weights for the model. This can be seen in the figure below.
+
+
+.. figure:: _img/L1.3.PNG
+
+L1 regularization works by pulling the weight values in proportion to their absolute value to reduce the effect of having too high of weight values.
+
 
