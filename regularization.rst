@@ -23,6 +23,6 @@ L1 Regularization
 
 **L1 regularization** makes use of the “regularization term” or Euclidean Norm of the weight matrices denoted as Ω. Ω is the sum of all the absolute weight values of a weight matrix. This function is shown below.
 
-.. figure:: _img/L1.1.png
+.. figure:: _img/L1.1.PNG
 
 
