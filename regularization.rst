@@ -8,7 +8,7 @@ Regularization
 ##################
 .. contents::
   :local:
-  :depth: 2
+  :depth: 4
   
   
 ------------
@@ -35,5 +35,33 @@ Taking the updated loss function and computing the gradient we can update the we
 .. figure:: _img/L1.31.png
 
 L1 regularization works by pulling the weight values in proportion to their absolute value to reduce the effect of having too high of weight values.
+
+
+------------------
+L2 regularization
+------------------
+
+**L2 regularization**, while similar to L1 regularization has some key differences and is also the most widely used method or regularization. L2 regularization, also known as weight decay or Ride Regression, uses the same regularization term (Ω) as L1 regularization. Ω is defined as the sum of all the squared weight values of the weight matrix which is shown below.
+
+.. figure:: _img/L2.1.PNG
+
+Using the function above we can compute the new loss function by dividing our regularization term by 2 and multiplying that by our regularization term of Ω. This can be seen below.
+
+.. figure:: _img/L2.2.PNG
+
+Taking the updated loss function and computing the gradient we can update the weights for the model the same way we do in L1 regularization. This can be seen in the figure below.
+
+
+.. figure:: _img/L1.31.png
+
+
+
+----------
+Sources
+----------
+
+| https://www.deeplearning-academy.com/p/ai-wiki-regularization
+| https://www.coursera.org/
+
 
 
