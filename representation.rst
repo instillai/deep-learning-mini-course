@@ -7,6 +7,9 @@ The figure below describes a very simple and basic 2 layer neural network. There
 
 
 
+.. figure:: _img/representation.jpg
 
-**References**
-https://www.coursera.org/
+
+
+| **References**
+| https://www.coursera.org/
