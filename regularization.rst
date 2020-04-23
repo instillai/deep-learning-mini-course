@@ -8,7 +8,7 @@ Regularization is the practice in deep learning of reducing the complexity of a 
 ##################
 .. contents::
   :local:
-  :depth: 3
+  :depth: 1
   
   
   ------------
