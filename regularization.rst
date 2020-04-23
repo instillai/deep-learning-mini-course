@@ -32,7 +32,7 @@ Using the scalar α we create a new loss function shown below. α is defined as 
 Taking the updated loss function and computing the gradient we can update the weights for the model. This can be seen in the figure below.
 
 
-.. figure:: _img/L1.31.PNG
+.. figure:: _img/L1.31.png
 
 L1 regularization works by pulling the weight values in proportion to their absolute value to reduce the effect of having too high of weight values.
 
