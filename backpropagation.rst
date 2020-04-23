@@ -8,7 +8,7 @@ When performing gradient descent, backpropagation is used to determine how you c
 ##################
 .. contents::
   :local:
-  :depth: 3
+  :depth: 4
 
 ---------------
 Sigmoid Review
@@ -64,5 +64,7 @@ Now the you have taken the cost function and computed dw\ :sup:`[1]`\ and db\ :s
 
 
 
-**Sources**
+--------
+Sources
+--------
 https://www.coursera.org/
