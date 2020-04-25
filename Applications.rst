@@ -51,7 +51,7 @@ Deep learning has been used in detecting finical and credit card fraud. Training
 
 
 -------------
-**Sources**
+**Referencs**
 -------------
 
 1. https://www.tesla.com/autopilotAI
