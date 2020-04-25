@@ -106,6 +106,7 @@ Basics
 ------------------------------------------------------------
 
 .. figure:: _img/linear.png
+          : Scale 50%
 .. _LogReg: LogisticRegression.rst
 .. _GradDec: gradientDescent.rst
 .. _Dev: DerivativesAndChainRule.rst
