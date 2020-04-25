@@ -57,7 +57,7 @@ Taking the updated loss function and computing the gradient we can update the we
 
 
 ----------
-Sources
+References
 ----------
 
 | https://www.deeplearning-academy.com/p/ai-wiki-regularization
