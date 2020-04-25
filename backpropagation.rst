@@ -64,7 +64,7 @@ Now the you have taken the cost function and computed dw\ :sup:`[1]`\ and db\ :s
 
 
 
---------
-Sources
---------
+-----------
+References
+-----------
 https://www.coursera.org/
