@@ -15,7 +15,7 @@ Why use deep learning rather than machine learning or other predictive algorithm
 ----------
 Smartphones, social media, and the scale of the internet today has allowed for gathering more data than ever before. Traditional learning algorithms show success in predicting outcomes when trained with data however these learning algorithms do not see increased performance past a certain size of data set. Neural networks showed better performance overtime with larger amounts of data than traditional learning algorithms, however deep learning algorithms with large neural networks showed the greatest increase in performance with access to more data. The access and quantity of data today have made deep learning algorithms the most attractive learning algorithm.
 
-.. figure:: _img/why_deep_learning.JPG
+.. figure:: _img/why_deep_learning1.jpg
 
 -----------------
 **Computation**
