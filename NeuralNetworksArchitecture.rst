@@ -6,7 +6,7 @@ Neural Networks Architecture
 ##################
 .. contents::
   :local:
-  :depth: 5
+  :depth: 8
 
 ==========================
 What is a neural network?
@@ -80,12 +80,20 @@ Now that we have created our model, all that is left to do is train it and make 
 .. figure:: _img_simple_code/6.PNG
 
 
+=============
+References
+=============
 This tutorial was inspired by the tutorial provided at https://medium.com/dair-ai/a-simple-neural-network-from-scratch-with-pytorch-and-google-colab-c7f3830618e0 created by Elvis on August 13, 2018. 
 
-
+=============
+Code
+=============
 .. _nnCode: simpleneuralnetwork.py
 `Full Code <nnCode_>`_
 
+=============
+Next Section
+=============
 .. _simpleLog: SimpleLogisticRegression.rst
 `Next Section: Simple Logistic Regression <simpleLog_>`_ 
 
