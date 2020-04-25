@@ -8,6 +8,8 @@ Dropout
 
 Dropout can be applied to just one or all hidden layers of the network as well as visible and input layers however is never done on the output layer. Dropout works because with less neurons being used to apply weight, the overall complexity of the network is reduced which helps to solve overfitting. Dropout is only used when training the model and the neurons which get turned off change with every iteration, dropout is not used in the model after training for predictions. 
 
-| **Sources**
+-----------
+References
+-----------
 | https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/
 | https://www.deeplearning-academy.com/p/ai-wiki-regularization
