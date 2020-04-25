@@ -25,7 +25,7 @@ Sigmoid
 --------------
 Given x, ŷ describes the probability that y is 1. This is equated as ŷ = P(y = 1 | x) and 0 ≤ ŷ ≤ 1. The parameters w and b where w ∈ R\ :sup:`x`\ and b ∈ R give the sigmoid function ŷ = σ(w\ :sup:`T`\ + b). The sigmoid function’s output spans from 0 to 1 whereas only using ŷ = w\ :sup:`T`\ + b (used for basic linear regression) does not. The function is denoted as σ(z) with z being w\ :sup:`T`\ + b. Looking at the equation in the graph below, the larger the value of z, the closer to 1 the function output will be. The smaller the value of z, the closer to 0 the function output will be.
 
-.. figure:: _img/sigmoid.JPG
+.. figure:: _img/sigmoidPic.jpg
 
 ----------------------
 Cost Functions
