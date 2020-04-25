@@ -22,9 +22,9 @@ Effects
 -----------------------------
 The strategy of batch normalization in a deep neural network basically opens the door for layers to learn with less dependence on the workings of other layers. Batch normalization also allows for the use of relatively higher learning rates without the negative effects that it would previously cause. Using higher learning rates without a resulting accuracy and reliability decrease means faster training. It also means that some networks that wouldn’t train successfully due to learning rate could find success. Batch normalization shows regularization effects that allow for the reduction of overfitting which is discussed in the Regularization tutorial. These effects are most similar to those of Dropout, therefore much less Dropout is needed to produce similar results.
 
----------
-Sources
----------
+-----------
+References
+-----------
 
 https://towardsdatascience.com/batch-normalization-in-neural-networks-1ac91516821c
 
