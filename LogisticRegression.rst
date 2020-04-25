@@ -8,7 +8,7 @@ Logistic Regression can be defined as an algorithm for binary classification, wh
 ##################
 .. contents::
   :local:
-  :depth: 3
+  :depth: 4
 
 ---------------
 Notation
@@ -35,6 +35,12 @@ With logistic regression, we want ŷ\ :sup:`(i)`\ to be as close to y\ :sup:`(i)
 Cost function:  J(w, b) = 1/m ∑\ :sup:`m`\ \ :sub:`i=0`\  L(ŷ(i), y(i)) = -1/m ∑\ :sup:`m`\ \ :sub:`i=0`\  [ylog(ŷ) + (1 - y)log(1 - ŷ)]
 
 The goal here is to find parameters w and b that minimize the cost function. This process is called gradient descent and will be discussed in the next section.
+
+
+----------------------
+Sources
+----------------------
+https://www.coursera.org/
 
 
 
