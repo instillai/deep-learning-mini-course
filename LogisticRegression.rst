@@ -8,7 +8,7 @@ Logistic Regression can be defined as an algorithm for binary classification, wh
 ##################
 .. contents::
   :local:
-  :depth: 4
+  :depth: 5
 
 ---------------
 Notation
@@ -44,6 +44,9 @@ https://www.coursera.org/
 
 
 
+----------------------
+Next Section
+----------------------
 .. _Deriv: DerivativesAndChainRule.rst
 `Next Section: Derivatives and the Chain Rule <Deriv_>`_ 
 
