@@ -6,7 +6,7 @@ Derivatives and the Chain Rule
 ##################
 .. contents::
   :local:
-  :depth: 1
+  :depth: 2
 
 
 The **derivative** of a function is an equation to find the slope of a function at a given point. With a linear function, the slope is the same at every point and can be easily calculated. For example, consider the function y = 5x + 4. The derivative is the change in y divided by the change in x. Looking at x = 1 and x = 2, you can see that y = 9 and 14 respectively. In this case, when x increases by 1, y increases by 5. So dy/dx is 5. There are many derivative rules out there for all types of functions but the most important rule for deep learning is the chain rule.
