@@ -23,9 +23,9 @@ Possible Solutions
 -----------------------------
 Strategies pertaining to adaptive learning rates can be applied to gradient descent to improve time and accuracy. There are two solid ways to adjust the iteration process to decrease the likelihood of problems caused by the learning rate. One is to adjust the learning rate proportionally to the size of the dataset. Depending on the chosen cost function, larger training sets can lead to larger steps per iteration. Having a learning rate that is adjusted to be smaller when training larger datasets can be a fix here. Another way to improve results by adapting the learning rate is to implement an algorithm that adjusts the learning rate after every iteration. This strategy accomplishes both time and accuracy improvements by moving faster in the beginning and gradually slower while approaching optimal parameter values. Although these strategies can produce significant improvements in gradient descent algorithms, they don’t eliminate all setbacks.
 
---------
-Sources
---------
+-----------
+References
+-----------
 
 https://towardsdatascience.com/why-gradient-descent-isnt-enough-a-comprehensive-introduction-to-optimization-algorithms-in-59670fd5c096
 
