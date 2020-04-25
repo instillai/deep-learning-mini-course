@@ -139,10 +139,8 @@ Basics
 Neural Networks
 ------------------------------------------------------------
 
-.. figure:: _img/neuralnetwork.jpeg
-         :height: 583px
-         :width: 444px
-         :scale: 50
+.. figure:: _img/neuralnetwork.jpg
+
 
 .. _over: overview.rst
 .. _comp: computation.rst
