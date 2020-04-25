@@ -106,7 +106,6 @@ Basics
 ------------------------------------------------------------
 
 .. figure:: _img/linear.png
-          :scale: 50
 .. _LogReg: LogisticRegression.rst
 .. _GradDec: gradientDescent.rst
 .. _Dev: DerivativesAndChainRule.rst
@@ -141,6 +140,7 @@ Neural Networks
 ------------------------------------------------------------
 
 .. figure:: _img/neuralnetwork.jpeg
+         :scale: 50
 
 .. _over: overview.rst
 .. _comp: computation.rst
