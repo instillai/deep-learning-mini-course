@@ -140,6 +140,8 @@ Neural Networks
 ------------------------------------------------------------
 
 .. figure:: _img/neuralnetwork.jpeg
+         :height: 583px
+         :width: 444px
          :scale: 50
 
 .. _over: overview.rst
