@@ -38,7 +38,7 @@ The goal here is to find parameters w and b that minimize the cost function. Thi
 
 
 ----------------------
-Sources
+References
 ----------------------
 https://www.coursera.org/
 
