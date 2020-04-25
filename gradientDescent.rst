@@ -1,6 +1,12 @@
------------------
+******************
 Gradient Descent
------------------
+******************
+
+##################
+##################
+.. contents::
+  :local:
+  :depth: 2
 
 .. figure:: _img/GradientDescentPic.JPG
 
@@ -23,6 +29,15 @@ What you are doing is updating w based on the partial derivative, or slope, in t
 
 
 
+-----------
+References
+-----------
+https://www.coursera.org/
+
+
+-------------
+Next Section
+-------------
 .. _simpleNN: NeuralNetworksArchitecture.rst
 `Next Section: Simple Neural Networks <simpleNN_>`_ 
 
