@@ -110,6 +110,8 @@ References
 - This tutorial is based off of the above links.
 
 
-
+------
+Code
+------
 .. _simpleLogCode: logisticregression.py
 `Full Code <simpleLogCode_>`_ 
