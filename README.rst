@@ -164,7 +164,7 @@ Neural Networks
 More on Deep Neural Networks
 ------------------------------------------------------------
 
-.. figure:: _img/brain.jpg
+.. figure:: _img/brainPic.jpg
 
 .. _reg: regularization.rst
 .. _drop: dropout.rst
