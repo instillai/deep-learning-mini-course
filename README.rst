@@ -83,8 +83,8 @@ Introduction to Deep Learning
 .. figure:: _img/brain1.png
 
 .. _what: introduction/What.rst
-.. _why: Why.rst
-.. _applications: Applications.rst
+.. _why: introduction/Why.rst
+.. _applications: introduction/Applications.rst
 
 .. _dtdoc: docs/source/content/supervised/decisiontrees.rst
 .. _dtcode: code/supervised/DecisionTree/decisiontrees.py
