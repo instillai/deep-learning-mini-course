@@ -77,6 +77,7 @@ Load and Nomralize CIFAR10 dataset
 The following code snippets will be functions that will get and plot some image files from the CIFAR10 dataset which we loaded in the code snippet shown above. In this snippet we will use numpy and matplotlib to show the images.
 
 .. code:: python
+
     def imshow(img):
         img = img / 2 + 0.5
         npimg = img.numpy()
