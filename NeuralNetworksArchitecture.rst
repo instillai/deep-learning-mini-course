@@ -38,8 +38,6 @@ Step 1: Data
 --------------------------------
 The first step in writing code to create any neural network is to either create or import the data that is going to be used to train your model. In this case, we will be creating our own training and test data. The X tensor below represents an individuals age and weight as the input to our network, and the Y tensor represents the maximum speed that the individual can run in MPH, the output. xPredicted is what we will use to test our neural network after it has been trained.
 
-.. figure:: _img_simple_code/1.PNG
-
 .. code:: python
 
   import torch
@@ -55,14 +53,38 @@ Step 2: Scaling
 --------------------------------
 Now that we have our data, we must scale it in order to make sure that our data is in a proper format to train our network.
 
-.. figure:: _img_simple_code/2.PNG
+.. code:: python
+
+  # Gets the maximum value in a tensor (vector)
+  X_max, _ = torch.max(X, 0)
+  xPredicted_max, _ = torch.max(xPredicted, 0)
+
+  # Function to divide two tensors
+  X = torch.div(X, X_max)
+  xPredicted = torch.div(xPredicted, xPredicted_max)
+  y = y / 100  # max test score is 100
 
 ---------------------------------
 Step 3: Model (Computation Graph)
 ---------------------------------
 When writing any simple neural network using PyTorch, it is recommended to define our model via a class. Our class header contains the name of the class and the parameter, which together define that we are creating a neural network. We then initialize our neural network. 
 
-.. figure:: _img_simple_code/3.PNG
+.. code:: python
+
+  # Class header that says we are defining a neural network
+  class Neural_Network(nn.Module):
+
+    # Performed upon creating instance of neural network
+    def __init__(self, ):
+        super(Neural_Network, self).__init__()
+        # parameters
+        self.inputSize = 2
+        self.outputSize = 1
+        self.hiddenSize = 3
+
+        # weight matrices
+        self.W1 = torch.randn(self.inputSize, self.hiddenSize) 
+        self.W2 = torch.randn(self.hiddenSize, self.outputSize)
 
 -------------------------------------
 Step 4: Forward Pass/Backpropagation
@@ -73,21 +95,62 @@ The forward function is where the data is entered and fed into the computation g
 
 The backpropagation function is used to minimize loss with respect to our weights when training.
 
-.. figure:: _img_simple_code/4.PNG
+.. code:: python
+
+  def forward(self, X):
+    self.z = torch.matmul(X, self.W1) 
+    self.z2 = self.sigmoid(self.z) # activation function
+    self.z3 = torch.matmul(self.z2, self.W2)
+    o = self.sigmoid(self.z3) # final activation function
+    return o
+    
+  def backward(self, X, y, o):
+    self.o_error = y - o # error in output
+    self.o_delta = self.o_error * self.sigmoidPrime(o) 
+    self.z2_error = torch.matmul(self.o_delta, torch.t(self.W2))
+    self.z2_delta = self.z2_error * self.sigmoidPrime(self.z2)
+    self.W1 += torch.matmul(torch.t(X), self.z2_delta)
+    self.W2 += torch.matmul(torch.t(self.z2), self.o_delta)  
 
 -------------------------------------
 Step 5: Activation Functions
 -------------------------------------
 Below are functions that represent in code we we have discussed earlier in this course, such as the sigmoid function. These are used in the forward pass. 
 
-.. figure:: _img_simple_code/5.PNG
+.. code:: python
+
+  def sigmoid(self, s):
+    return 1 / (1 + torch.exp(-s))
+    
+  def sigmoidPrime(self, s):
+    # derivative of sigmoid
+    return s * (1 - s)
+
+  def saveWeights(self, model):
+    torch.save(model, "NN")
+
+  def train(self, X, y):
+    o = self.forward(X)
+    self.backward(X, y, o)
+        
+  def predict(self):
+    print ("Predicted data based on trained weights: ")
+    print ("Input (scaled): \n" + str(xPredicted))
+    print ("Output: \n" + str(self.forward(xPredicted)))
 
 -------------------------------------
 Step 6: Train
 -------------------------------------
 Now that we have created our model, all that is left to do is train it and make a prediction!
 
-.. figure:: _img_simple_code/6.PNG
+.. code:: python
+
+  NN = Neural_Network()
+  for i in range(1000):  # trains the NN 1,000 times
+      print ("#" + str(i) + " Loss: " + str(torch.mean((y - NN(X))**2).detach().item()))  # mean sum squared loss
+      NN.train(X, y)
+  NN.saveWeights(NN)
+  NN.predict()
 
 
 =============
