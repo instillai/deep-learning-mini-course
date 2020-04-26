@@ -13,7 +13,7 @@ The basis behind most deep learning algorithms consists of using a gradient to m
 ---------------
 Learning Rate
 ---------------
-.. figure:: _img/setbacks.png
+.. figure:: ../_img/setbacks.png
 
 When optimizing functions using gradients, the goal is to find parameter values that converge at a point where the function’s loss is equal to or extremely close to the minimum. The learning rate parameter is what decides how much the initial parameters are altered when performing an iteration of gradient descent. Choosing this learning rate creates a prominent setback relating to convergence. If the chosen learning rate is fast, the iterations could end up skipping over the global minimum thus arriving at a local minimum. A fast learning rate basically trades off time for accuracy. On the contrary, choosing a slower learning rate doesn’t guarantee success. With a slow learning rate, the values may never converge because it would take more iterations than possible.
 
