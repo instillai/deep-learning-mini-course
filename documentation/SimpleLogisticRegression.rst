@@ -13,7 +13,7 @@ Overview
 ----------------------------
 Logistic regression is used to predict the categorical dependent variable with the help of one or more independent variables. The output of a logistic regression function can only be represented by a number between 0 and 1 and is represented by a sigmoid function.
 
-.. figure:: ../_img/10.png
+.. figure:: ../img_regression_code/10.PNG
 
 ----------------------------
 Step 0: Import libraries
