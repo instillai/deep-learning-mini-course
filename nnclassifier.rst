@@ -26,7 +26,6 @@ Convolutional Neural Network
 The architecture that is behind neural networks is always fairly straightforward. While there are many different types of architectures 
 that are used for getting more accurate predictions in specific scenarios, they all involve input nodes and an output node, or "neuron". The input neurons take data about a scenario, and multiple layers on the "inside" of the network calculate what the outcome will be. What makes a neural network "deep" is when there are more than a single layer of neurons between the input and output neurons, as can be seen below. 
 
-.. figure:: _img/neuralnetwork.jpeg
 
 ===========================================
 Code for a Simple Neural Network Classifier
@@ -94,10 +93,17 @@ The following code snippets will be functions that will get and plot some image 
     print(' '.join('%5s' % classes[labels[j]] for j in range(4)))
     
     
+The following images contain the console output if the code were to be run as of now.
+.. figure: imgs
 ---------------------------------------------
 Step 2: Define a Convolutional Neural Network
 ---------------------------------------------
 Our Convolutional Neural Network will take 3-channel images. This is where the torch.nn library will be used to define our neural network.
+
+.. code:: python
+
+    import matplotlib.pyplot as plt
+    import numpy as np
 
 .. code:: python
 
@@ -111,6 +117,10 @@ Our Convolutional Neural Network will take 3-channel images. This is where the t
             self.fc2 = nn.Linear(120, 84)
             self.fc3 = nn.Linear(84, 10)
             
+In this step, we will also define a forward propagation function within the neural network. 
+
+.. code:: python
+
         def forward(self, x):
             x = self.pool(F.relu(self.conv1(x)))
             x = self.pool(F.relu(self.conv2(x)))
@@ -120,7 +130,12 @@ Our Convolutional Neural Network will take 3-channel images. This is where the t
             x = self.fc3(x)
             return x
             
+Finally, create an instance of your neural network.
+
+.. code:: python
+            
     net = Net()
+    
     
     
 
@@ -193,7 +208,7 @@ References
 =============
 This tutorial was inspired by the tutorial provided at https://pytorch.org/docs/stable/torchvision/transforms.html created by 14 contributors, last contributed on October 13, 2019.  View contributors and contributions here: https://github.com/pytorch/tutorials/blob/master/beginner_source/blitz/cifar10_tutorial.py
 
-Supplementary References: 
+Additional Supplementary References: 
 
 - https://pytorch.org/docs/stable/torchvision/transforms.html
 - 
