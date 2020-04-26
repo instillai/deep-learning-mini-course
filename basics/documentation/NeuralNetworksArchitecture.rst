@@ -26,7 +26,7 @@ Architecture
 The architecture that is behind neural networks is always fairly straightforward. While there are many different types of architectures 
 that are used for getting more accurate predictions in specific scenarios, they all involve input nodes and an output node, or "neuron". The input neurons take data about a scenario, and multiple layers on the "inside" of the network calculate what the outcome will be. What makes a neural network "deep" is when there are more than a single layer of neurons between the input and output neurons, as can be seen below. 
 
-.. figure:: ../_img/neuralnetwork.jpeg
+.. figure:: ../_img/neuralnetwork.jpg
 
 ================================
 Code for a Simple Neural Network
