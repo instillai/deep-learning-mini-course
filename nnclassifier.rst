@@ -212,13 +212,17 @@ This tutorial was inspired by the tutorial provided at https://pytorch.org/docs/
 Additional Supplementary References: 
 
 - https://pytorch.org/docs/stable/torchvision/transforms.html
-- 
+- https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html#sphx-glr-beginner-blitz-neural-networks-tutorial-py
+- https://pytorch.org/docs/stable/torchvision/transforms.html
 
 =============
 Code
 =============
 .. _nnClassCode: NNclassifier.py
-`Full Code <nnClassCode_>`_
+`Full Code Steps 1 - 4 <nnClassCode_>`_
+
+.. _nnClassTest: NNclassifier_test.py
+`Full Code Step 5 <nnClassTest_>`_
 
 =============
 Next Section
