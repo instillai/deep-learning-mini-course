@@ -94,7 +94,8 @@ The following code snippets will be functions that will get and plot some image 
     
     
 The following images contain the console output if the code were to be run as of now.
-.. figure: imgs
+
+
 ---------------------------------------------
 Step 2: Define a Convolutional Neural Network
 ---------------------------------------------
