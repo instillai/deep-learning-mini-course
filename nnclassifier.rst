@@ -125,29 +125,66 @@ Our Convolutional Neural Network will take 3-channel images. This is where the t
     
 
 
----------------------------------
-Step 3: Model (Computation Graph)
----------------------------------
+--------------------------------------------
+Step 3: Define a Loss Function and Optimizer
+--------------------------------------------
+In this step we define a loss function and an optimizer. A loss function as discussed in Logistic Regression, Backpropagation, and the Gradient Descent section will map values of one or more variables into a real number representing a cost to an event. In this code snippet we will use the CrossEntropyLoss.
 
+And we define it like so..
+.. code:: python
+
+    criterion = nn.CrossEntropyLoss()
+    
+When defining our optimizer which will attempt to minimize loss, this is where the torch.optim libary comes into play. 
+
+.. code:: python
+
+    import torch.optim as optim
+
+In this code snippet, we will use SGD which stands for Stochastic Gradient Descent.
+
+And we define the optimizer like so..
+.. code:: python
+
+    optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
+    
+  
 
 -------------------------------------
-Step 4: Forward Pass/Backpropagation
+Step 4: Training the Network
+-------------------------------------
+At this point, we have defined our dataset, our Convolutional Neural Network, forward propagation, loss function, and optimizer. Therefore, we will train the neural network.
+
+.. code:: python
+
+    for epoch in range(2):
+        running_loss = 0.0
+        for i, data in enumerate(trainloader, 0):
+            inputs, labels = data
+            optimizer.zero_grad() # Why?
+            outputs = net(inputs)
+            loss = criterion(outputs, labels)
+            loss.backward()
+            optimizer.step()
+            
+            running_loss += loss.item()
+            
+            if i % 2000 == 1999:
+                print('[%d, %5d] loss: %.3f' % (epoch + 1, i + 1, running_loss / 2000))
+                running_loss = 0.0
+    
+    print('Finished Training')
+
+-------------------------------------
+Step 5: Test the Network on Test Data
 -------------------------------------
 
 
--------------------------------------
-Step 5: Activation Functions
--------------------------------------
+------------------------------------------
+Step 6: Results
+------------------------------------------
 
 
--------------------------------------
-Step 6: Train
--------------------------------------
-
-
--------------------------------------
-Step 7: Results
--------------------------------------
 
 =============
 References
