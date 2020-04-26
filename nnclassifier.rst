@@ -31,19 +31,35 @@ that are used for getting more accurate predictions in specific scenarios, they 
 ===========================================
 Code for a Simple Neural Network Classifier
 ===========================================
-To begin writing code with the PyTorch library, it is important to ensure that you have imported torch at the beginning of your python program. 
+To begin writing code with the PyTorch library, it is important to ensure that you have imported torch at the beginning of your python program. In the following code snippet, we import torch neural network library as well as an optimizer for the neural network which will be explained in further detail in step 6. 
+
+.. code:: python
+
+    import torch
+    import torch.nn as nn
+    import torch.nn.functional as F
+    import torch.optim as optim
+
+For this particular example, we will need to import the torchvision library for the data set as well.
+The dataset consists of classes airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck. The images in CIFAR-10 are of size 3x32x32 . i.e. 3-channel color images of 32x32 pixels in size.
+
+.. code:: python
+
+    import torchvision
+    import torchvision.transforms as transforms
+    
+In addition to the dataset we will need to import matplotlib and numpy to plot the images as well as use numpy for some computation.
+
+.. code:: python
+    
+    import matplotlib.pyplot as plt
+    import numpy as np
 
 --------------------------------
 Step 1: Data - CIFAR10
 --------------------------------
 Load and Nomralize CIFAR10 dataset
-The dataset consists of classes airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck. The images in CIFAR-10 are of size 3x32x32 . i.e. 3-channel color images of 32x32 pixels in size.
 
-.. code:: python
-
-    import torch
-    import torchvision
-    import torchvision.transforms as transforms
 
 --------------------------------
 Step 2: Scaling
