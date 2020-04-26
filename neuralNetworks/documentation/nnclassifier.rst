@@ -218,10 +218,10 @@ Additional Supplementary References:
 =============
 Code
 =============
-.. _nnClassCode: NNclassifier.py
+.. _nnClassCode: ../code/NNclassifier.py
 `Full Code Steps 1 - 4 <nnClassCode_>`_
 
-.. _nnClassTest: NNclassifier_test.py
+.. _nnClassTest: ../code/NNclassifier_test.py
 `Full Code Step 5 <nnClassTest_>`_
 
 =============
