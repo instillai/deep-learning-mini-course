@@ -106,9 +106,9 @@ Basics
 ------------------------------------------------------------
 
 .. figure:: _img/linear.png
-.. _LogReg: LogisticRegression.rst
-.. _GradDec: gradientDescent.rst
-.. _Dev: DerivativesAndChainRule.rst
+.. _LogReg: basics/LogisticRegression.rst
+.. _GradDec: basics/gradientDescent.rst
+.. _Dev: basics/DerivativesAndChainRule.rst
 
 .. _architecture: NeuralNetworksArchitecture.rst
 .. _architecturecode: simpleneuralnetwork.py
