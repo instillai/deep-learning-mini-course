@@ -21,8 +21,14 @@ Step 0: Import libraries
 Import the PyTorch libraries needed to train a logistic regression model. We also needed to import torchvision, 
 which is a package that consists of popular datasets and image transformations for computer vision.
 
-.. figure:: img_regression_code/0.PNG
+.. code:: python
 
+  # Import all the packages
+  import torch
+  import torch.nn as nn
+  import torchvision.datasets as dSets
+  import torchvision.transforms as transforms
+  
 --------------------------------
 Step 1: Create Dataset
 --------------------------------
@@ -31,54 +37,124 @@ or can be loaded from any public data source. In this case, we chose to load the
 This dataset contains thousands of handwritten numbers from 1 to 9. Our goal is to train a logistic regression model that is 
 able to decipher each handwritten digit.
 
-.. figure:: img_regression_code/1.PNG
+.. code:: python
+
+  train_dataset = dSets.MNIST(root='./data', train=True, transform=transforms.ToTensor(), download=True)
+  test_dataset = dSets.MNIST(root='./data', train=False, transform=transforms.ToTensor())
 
 --------------------------------
 Step 2: Make Dataset Iterable
 --------------------------------
 The next step is to make sure that we can iterate through the dataset that we just loaded. The PyTorch DataLoader function makes this step very simple.
 
-.. figure:: img_regression_code/2.PNG
+.. code:: python
+
+  train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=100, shuffle=True)
+  test_loader = torch.utils.data.DataLoader(dataset=test_dataset, batch_size=100, shuffle=False)
 
 ---------------------------------
 Step 3: Create Model Class
 ---------------------------------
 Now, we need to create a class that defines the architecture of linear regression. This class is going to include the initialization of our model as well as a definition for our forward propagation. Forward propagation refers to the calculation and storage of intermediate variables (including outputs) for the neural network in order from the input layer to the output layer.
 
-.. figure:: img_regression_code/3.PNG
+.. code:: python
+
+  class LogisticRegressionModel(nn.Module):
+    def __init__(self, input_size, output_size):
+      super(LogisticRegressionModel, self).__init__()
+      self.linear = nn.Linear(input_size, output_size)
+
+    def forward(self, x):
+      y_predict = self.linear(x)
+      return y_predict
 
 -------------------------------------
 Step 4: Instantiate Model Class
 -------------------------------------
 Next, we initialize the model class by importing our input and output dimensions into the logistic regression model. The input dimension is 784 because each image within the data set has 784 pixels (28*28). The output dimension is 10 because we are trying to determine what digit the handwritten picture depicts (0-9).
 
-.. figure:: img_regression_code/4.PNG
+.. code:: python
+
+  input_dim = 784
+  output_dim = 10
+
+  model = LogisticRegressionModel(input_dim,output_dim)
 
 -------------------------------------
 Step 5: Instantiate Loss Class
 -------------------------------------
 We then initialize the loss class by using CrossEntropyLoss to compute loss. CrossEntropyLoss measures the performance of a classification model whose output is a probability value between 0 and 1.
 
-.. figure:: img_regression_code/5.PNG
+.. code:: python
+
+  loss_fn = nn.CrossEntropyLoss()
 
 -------------------------------------
 Step 6: Instantiate Optimizer Class
 -------------------------------------
 The optimizer represents the learning algorithm that we have selected to use. In this case we have decided to use Stochastic Gradient Descent (SGD). 
 
-.. figure:: img_regression_code/6.PNG
+.. code:: python
 
+  learning_rate = 0.001
+  optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 
 -------------------------------------
 Step 6: Train Model
 -------------------------------------
 The final step in this linear regression is to train the regression model. During this step, we iterate through the images. As we move from image to image, we make the image a variable, clear unneeded parameters and then send the image into the logistic regression model as a parameter. From there, we are able to calculate loss using the loss function, call PyTorch’s back propagation function and update the parameters for the next image using the optimizer. Lastly, we provide a chunk of code that calculates an accuracy value and displays the loss and accuracy values for every hundredth iteration.
 
-.. figure:: img_regression_code/7.PNG
+.. code:: python
 
-.. figure:: img_regression_code/8.PNG
+  iter = 0
+  for epoch in range(1):
+      for i, (images, labels) in enumerate(train_loader):
+          # Load images as Variable
+          images = images.view(-1, 28*28).requires_grad_()
+          labels = labels
 
-.. figure:: img_regression_code/9.PNG
+          # Clear gradients w.r.t. parameters
+          optimizer.zero_grad()
+
+          # Forward pass to get output/logits
+          outputs = model(images)
+
+          # Calculate Loss: softmax --> cross entropy loss
+          loss = loss_fn(outputs, labels)
+
+          # Computes the sum of gradients of given tensors w.r.t. graph leaves
+          loss.backward()
+
+          # Updating parameters
+          optimizer.step()
+
+          iter += 1
+
+          if iter % 100 == 0:
+              # Calculate Accuracy         
+              correct = 0
+              total = 0
+              # Iterate through test dataset
+              for images, labels in test_loader:
+                  # Load images to a Torch Variable
+                  images = images.view(-1, 784).requires_grad_()
+
+                  # Forward pass only to get logits/output
+                  outputs = model(images)
+
+                  # Get predictions from the maximum value
+                  _, predicted = torch.max(outputs.data, 1)
+
+                  # Total number of labels
+                  total += labels.size(0)
+
+                  # Total correct predictions
+                  correct += (predicted == labels).sum()
+
+              accuracy = 100 * correct / total
+
+              # Print Loss
+              print('Iteration: {}. Loss: {}. Accuracy: {}'.format(iter, loss.item(), accuracy))
 
 -------------------------------------
 Example Output
