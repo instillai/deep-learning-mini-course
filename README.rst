@@ -82,12 +82,9 @@ Introduction to Deep Learning
 
 .. figure:: _img/brain1.png
 
-.. _what: introduction/What.rst
-.. _why: introduction/Why.rst
-.. _applications: introduction/Applications.rst
-
-.. _dtdoc: docs/source/content/supervised/decisiontrees.rst
-.. _dtcode: code/supervised/DecisionTree/decisiontrees.py
+.. _what: documentation/What.rst
+.. _why: documentation/Why.rst
+.. _applications: documentation/Applications.rst
 
 
 +--------------------------------------------------------------------+-------------------------------+
@@ -106,15 +103,15 @@ Basics
 ------------------------------------------------------------
 
 .. figure:: _img/linear.png
-.. _LogReg: basics/LogisticRegression.rst
-.. _GradDec: basics/gradientDescent.rst
-.. _Dev: basics/DerivativesAndChainRule.rst
+.. _LogReg: documentation/LogisticRegression.rst
+.. _GradDec: documentation/gradientDescent.rst
+.. _Dev: documentation/DerivativesAndChainRule.rst
 
-.. _architecture: basics/documentation/NeuralNetworksArchitecture.rst
-.. _architecturecode: basics/code/simpleneuralnetwork.py
+.. _architecture: documentation/NeuralNetworksArchitecture.rst
+.. _architecturecode: code/simpleneuralnetwork.py
 
-.. _regression: basics/documentation/SimpleLogisticRegression.rst
-.. _regressioncode: basics/code/logisticregression.py
+.. _regression: documentation/SimpleLogisticRegression.rst
+.. _regressioncode: code/logisticregression.py
 
 
 +--------------------------------------------------------------------+-------------------------------+
@@ -142,12 +139,12 @@ Neural Networks
 .. figure:: _img/neuralnetwork.jpg
 
 
-.. _over: overview.rst
-.. _comp: computation.rst
-.. _acti: activationFunctions.rst
-.. _back: backpropagation.rst
-.. _class: nnclassifier.rst
-.. _nnclassifiercode: NNclassifier.py
+.. _over: documentation/overview.rst
+.. _comp: documentation/computation.rst
+.. _acti: documentation/activationFunctions.rst
+.. _back: documentation/backpropagation.rst
+.. _class: documentation/nnclassifier.rst
+.. _nnclassifiercode: code/NNclassifier.py
 
 +--------------------------------------------------------------------+--------------------------------+
 | Title                                                              |    Document                    |
@@ -174,10 +171,10 @@ More on Deep Neural Networks
 
 .. figure:: _img/brain2.jpg
 
-.. _reg: regularization.rst
-.. _drop: dropout.rst
-.. _gradSet: gradientSetbacks.rst
-.. _batch: batchNormalization.rst
+.. _reg: documentation/regularization.rst
+.. _drop: documentation/dropout.rst
+.. _gradSet: documentation/gradientSetbacks.rst
+.. _batch: documentation/batchNormalization.rst
 
 
 +--------------------------------------------------------------------+---------------------------+
