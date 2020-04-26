@@ -40,6 +40,15 @@ The first step in writing code to create any neural network is to either create 
 
 .. figure:: _img_simple_code/1.PNG
 
+.. code-block:: python
+import torch
+import torch.nn as nn
+X = torch.tensor(([2, 9], [1, 5], [3, 6]), dtype=torch.float) # 3 X 2 tensor
+y = torch.tensor(([92], [100], [89]), dtype=torch.float) # 3 X 1 tensor
+
+# Single input that we want to use to predict a grade using parameters learned from the neural network
+xPredicted = torch.tensor(([4, 8]), dtype=torch.float) # 1 X 2 tensor
+
 --------------------------------
 Step 2: Scaling
 --------------------------------
