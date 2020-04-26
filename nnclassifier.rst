@@ -85,12 +85,10 @@ The following code snippets will be functions that will get and plot some image 
     dataiter = iter(trainloader)
     images, labels = dataiter.next()
     
-    #show images
     imshow(torchvision.utils.make_grid(images))
-    #print labels
     print(' '.join('%5s' % classes[labels[j]] for j in range(4)))
-
-
+    
+    
 ---------------------------------------------
 Step 2: Define a Convolutional Neural Network
 ---------------------------------------------
