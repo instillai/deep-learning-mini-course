@@ -15,7 +15,7 @@ Standardization
 ----------------
 Batch normalization helps to create a process where multiple layers are updated in a fashion that is much more coordinated and synchronized. One way that batch normalization accomplishes this is through standardizing the activation values from preceding layers similar to how the input layer is standardized. This means taking a batch of data coming into a layer and shaping it to have a mean of 0 and deviation of 1 to help reduce the network’s inner covariate shift. The primary effect this activation data standardization is that it stabilizes the distribution of inputs during parameter updates while still allowing relationships between nodes to change. The figure below shows the functions used for normalization and is from https://arxiv.org/pdf/1502.03167v3.pdf
 
-.. figure:: _img/normalization.JPG
+.. figure:: ../_img/normalization.JPG
 
 -----------------------------
 Effects
