@@ -6,25 +6,23 @@ Neural Network Classifier
 ##################
 .. contents::
   :local:
-  :depth: 8
+  :depth: 7
 
 ==========================
 Overview
 ==========================
-Neural networks are computing systems that are modeled after the brains of living animals. They consist of neurons that are all connected to create a network. These systems "learn" from data that is provided to them. By providing neural networks with enough data, they are capable of making accurate predictions by training and learning from the data.
+As discussed in previous sections, neural networks are computing systems that are modeled after the brains of living animals. They consist of neurons that are all connected to create a network. These systems "learn" from data that is provided to them. By providing neural networks with enough data, they are capable of making accurate predictions by training and learning from the data.
 
-==========================
-The Basics
-==========================
-The function of neural networks is fairly straightforward and basic. An input is provided to the network, and after some calculations are made, an output is returned. For example, if we wanted to have a program that could determine if there is a dog in a picture then the input to the neural network would be a picture, and the output would be true or false based on whether the network thinks the picture contains a dog or not.
-
-In order for neural networks to be able to make these predictions, they must be given data to train. Training a neural network involves providing a large amount of input data and it's corresponding output data. Neural networks are able to make calculations to infer relationships between the inputs and outputs, and create a system for accurately being able to predict an outcome when only given an input.
+In this section, we will discuss and implement a Neural Network Classifier. Neural Network Classifiers are neural networks that are trained to classify an input to an output defining the input as a class of an object. For our purposes, we will focus on the classification of images. 
 
 ============================
 Convolutional Neural Network
 ============================
-The architecture that is behind neural networks is always fairly straightforward. While there are many different types of architectures 
-that are used for getting more accurate predictions in specific scenarios, they all involve input nodes and an output node, or "neuron". The input neurons take data about a scenario, and multiple layers on the "inside" of the network calculate what the outcome will be. What makes a neural network "deep" is when there are more than a single layer of neurons between the input and output neurons, as can be seen below. 
+The type of Neural Network used in this section is a Convolutional Neural Network. Convolutional Networks have advantages over normal neural networks when it comes to image classifications. The problem with image classification is that images with many color channels and pixels becomes very hard to computationally define and train models. Convolutional Neural Networks transform images into forms that are easier to process by passing a filter over the original image, conducting matrix multiplication over a subsection of pixels in the original image. It repeats this process until all subsections of the original image has been processed. 
+
+Once the original image has been processed, the Convolutional Neural Network will undergo the pooling process which will reduce the spatial size of the convoluted features. This reduction in complexity will drecrease the computational cost of analyzing the dataset. 
+
+After the pooling process, the information from the original image will be compressed enough to be used in a neural network model. Then the Convolutional Neural Network acts like a regular neural network where the information is passed to a set of neurons which pass values to additional layers until it results in a final output.
 
 
 ===========================================
@@ -214,6 +212,7 @@ Additional Supplementary References:
 - https://pytorch.org/docs/stable/torchvision/transforms.html
 - https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html#sphx-glr-beginner-blitz-neural-networks-tutorial-py
 - https://pytorch.org/docs/stable/torchvision/transforms.html
+- https://towardsdatascience.com/classification-using-neural-networks-b8e98f3a904f
 
 =============
 Code
