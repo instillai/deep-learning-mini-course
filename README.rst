@@ -110,11 +110,11 @@ Basics
 .. _GradDec: basics/gradientDescent.rst
 .. _Dev: basics/DerivativesAndChainRule.rst
 
-.. _architecture: NeuralNetworksArchitecture.rst
-.. _architecturecode: simpleneuralnetwork.py
+.. _architecture: basics/documentation/NeuralNetworksArchitecture.rst
+.. _architecturecode: basics/code/simpleneuralnetwork.py
 
-.. _regression: SimpleLogisticRegression.rst
-.. _regressioncode: logisticregression.py
+.. _regression: basics/documentation/SimpleLogisticRegression.rst
+.. _regressioncode: basics/code/logisticregression.py
 
 
 +--------------------------------------------------------------------+-------------------------------+
