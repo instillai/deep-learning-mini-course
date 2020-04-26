@@ -39,12 +39,12 @@ Step 1: Data - CIFAR10
 Load and Nomralize CIFAR10 dataset
 .. code-block:: python
     
-    # Dataset consists of classes airplane, automobile, bird, cat, deer, dog, frog, horse, ship,    truck \
-    # The images in CIFAR-10 are of size 3x32x32 . i.e. 3-channel color images of 32x32 pixels in     size. \
+    # Dataset consists of classes airplane, automobile, bird, cat, deer, dog, frog, horse, ship,    truck \n
+    # The images in CIFAR-10 are of size 3x32x32 . i.e. 3-channel color images of 32x32 pixels in     size. \n
     
-    import torch \
-    import torchvision \
-    import torchvision.transforms as transforms \
+    import torch \n
+    import torchvision \n
+    import torchvision.transforms as transforms \n
 
 --------------------------------
 Step 2: Scaling
