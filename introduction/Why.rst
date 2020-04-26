@@ -28,7 +28,7 @@ Another reason for the popularity and use of deep learning is the technological 
 Deep learning's popularity has also been fueled by advancements in learning algorithms in recent years. With better algorithms for neural networks, deep learning algorithms have shown a vast improvement in performance and efficiency. One example of these advancements is the use of ReLU functions rather than sigmoid functions. ReLU functions have proved more efficient than sigmoid functions by reducing the likelihood of a gradient to vanish which is a major cause of inefficiency in deep learning algorithms.
 
 --------------
-References
+**References**
 --------------
 1. https://www.coursera.org/specializations/deep-learning
 2. https://machinelearningmastery.com/what-is-deep-learning/
