@@ -82,7 +82,7 @@ Introduction to Deep Learning
 
 .. figure:: _img/brain1.png
 
-.. _what: What.rst
+.. _what: introduction/What.rst
 .. _why: Why.rst
 .. _applications: Applications.rst
 
