@@ -34,11 +34,17 @@ Code for a Simple Neural Network Classifier
 To begin writing code with the PyTorch library, it is important to ensure that you have imported torch at the beginning of your python program. 
 
 --------------------------------
-Step 1: Data
+Step 1: Data - CIFAR10
 --------------------------------
+Load and Nomralize CIFAR10 dataset
+.. code-block:: python
+    # The dataset consists of classes airplane, automobile, bird, cat, deer, dog, frog, horse, ship,        truck
+    # The images in CIFAR-10 are of size 3x32x32 . i.e. 3-channel color images of 32x32 pixels in           size.
+    import torch
+    import torchvision
+    import torchvision.transforms as transforms
 
 
-.. figure:: _img_simple_code/1.PNG
 
 --------------------------------
 Step 2: Scaling
@@ -80,6 +86,8 @@ References
 =============
 This tutorial was inspired by the tutorial provided at https://pytorch.org/docs/stable/torchvision/transforms.html created by 14 contributors, last contributed on October 13, 2019.  View contributors and contributions here: https://github.com/pytorch/tutorials/blob/master/beginner_source/blitz/cifar10_tutorial.py
 
+- https://pytorch.org/docs/stable/torchvision/transforms.html
+- 
 
 =============
 Code
