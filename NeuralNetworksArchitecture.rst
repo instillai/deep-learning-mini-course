@@ -40,7 +40,8 @@ The first step in writing code to create any neural network is to either create 
 
 .. figure:: _img_simple_code/1.PNG
 
-.. code-block:: python
+.. code:: python
+
 import torch
 import torch.nn as nn
 X = torch.tensor(([2, 9], [1, 5], [3, 6]), dtype=torch.float) # 3 X 2 tensor
