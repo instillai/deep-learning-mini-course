@@ -131,6 +131,7 @@ Step 3: Define a Loss Function and Optimizer
 In this step we define a loss function and an optimizer. A loss function as discussed in Logistic Regression, Backpropagation, and the Gradient Descent section will map values of one or more variables into a real number representing a cost to an event. In this code snippet we will use the CrossEntropyLoss.
 
 And we define it like so..
+
 .. code:: python
 
     criterion = nn.CrossEntropyLoss()
@@ -144,6 +145,7 @@ When defining our optimizer which will attempt to minimize loss, this is where t
 In this code snippet, we will use SGD which stands for Stochastic Gradient Descent.
 
 And we define the optimizer like so..
+
 .. code:: python
 
     optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
@@ -190,6 +192,8 @@ Step 6: Results
 References
 =============
 This tutorial was inspired by the tutorial provided at https://pytorch.org/docs/stable/torchvision/transforms.html created by 14 contributors, last contributed on October 13, 2019.  View contributors and contributions here: https://github.com/pytorch/tutorials/blob/master/beginner_source/blitz/cifar10_tutorial.py
+
+Supplementary References: 
 
 - https://pytorch.org/docs/stable/torchvision/transforms.html
 - 
