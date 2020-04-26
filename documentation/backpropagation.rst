@@ -13,11 +13,11 @@ When performing gradient descent, backpropagation is used to determine how you c
 ---------------
 Sigmoid Review
 ---------------
-.. figure:: _img/sigmoidPic.jpg
+.. figure:: ../_img/sigmoidPic.jpg
 
 As discussed in the Linear Regression tutorial, the sigmoid function is a = σ(z), where z = w\ :sup:`T`\x+ b. The following describes the derivation of this function:
 
-.. figure:: _img/backpropagation1.JPG
+.. figure:: ../_img/backpropagation1.JPG
 
 Here we can see that da/dz = a (1 – a).
 
@@ -27,7 +27,7 @@ Backpropagation Example
 -----------------------------
 Consider a neural network with one hidden layer. The parameters will be the matrices W\ :sup:`[1]`\, b\ :sup:`[1]`\, W\ :sup:`[2]`\, and b\ :sup:`[2]`\. The cost function will be the following equation:
 
-.. figure:: _img/backpropagation2.JPG
+.. figure:: ../_img/backpropagation2.JPG
 
 In this equation, ŷ is interchangeable with a\ :sup:`[2]`\ because it is our last a value. The values you are trying to find through backpropagation here are dw\ :sup:`[1]`\ and db\ :sup:`[1]`\ so that you can update w and b accordingly for gradient descent. First you need to compute ŷ for the training examples through the following steps which are discussed in the previous section:
 
