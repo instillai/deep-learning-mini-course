@@ -61,18 +61,19 @@ Step 1: Data - CIFAR10
 Load and Nomralize CIFAR10 dataset
 
 .. code:: python
+    
     transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,0.5,0.5),(0.5,0.5,0.5))])
-
+    
     trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
-
-     trainloader = torch.utils.data.DataLoader(trainset, batch_size=4,shuffle=True, num_workers=2)
-     
-     testset = torchvision.datasets.CIFAR10(root='./data', train = False, download=True, transform=transform)
-     
-     testloader = torch.utils.data.DataLoader(testset, batch_size=4,shuffle=False, num_workers=2)
-
-     classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
-     
+    
+    trainloader = torch.utils.data.DataLoader(trainset, batch_size=4,shuffle=True, num_workers=2)
+    
+    testset = torchvision.datasets.CIFAR10(root='./data', train = False, download=True, transform=transform)
+    
+    testloader = torch.utils.data.DataLoader(testset, batch_size=4,shuffle=False, num_workers=2)
+    
+    classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+    
 The following code snippets will be functions that will get and plot some image files from the CIFAR10 dataset which we loaded in the code snippet shown above. In this snippet we will use numpy and matplotlib to show the images.
 
 .. code:: python
