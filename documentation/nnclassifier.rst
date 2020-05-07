@@ -296,12 +296,17 @@ In this code, we print the running_loss every 2000 iteration and reset to 0. The
     [2, 12000] loss: 1.272
     Finished Training
 
-    
+To move onto testing on testloader, save your trained Neural Network model like so.. PyTorch allows you to save and load Neural Network models.
+
+.. code:: python
+
+    PATH = './cifar_net.pth'
+    torch.save(net.state_dict(), PATH)
 
 -------------------------------------
 Step 5: Test the Network on Test Data
 -------------------------------------
-Now we have trained our neural network, time to test it on some test data which we defined in step 1.
+Now we have trained our neural network, time to test it on some test data which we defined in step 1. In the following code snippet, we will display some images from the test set and label with the correct label of the images.
 
 .. code:: python
 
@@ -311,6 +316,11 @@ Now we have trained our neural network, time to test it on some test data which 
     imshow(torchvision.utils.make_grid(images))
     print('GroundTrute: ', ' '.join('%5s' % classes[labels[j]] for j in range(4)))
     
+    
+Now let's create an instance of our Neural Network previously defined and load your saved Neural network. Put the images through the neural network and output its predictions using torch.max which returns the maximum value of all elements in the input tensor.
+    
+.. code:: python
+
     net = Net()
     net.load_state_dict(torch.load(PATH))
     
@@ -319,6 +329,9 @@ Now we have trained our neural network, time to test it on some test data which 
     _, predicted = torch.max(outputs, 1)
     print('Predicted: ', ' '.join('%5s' % classes[predicted[j]] for j in range(4)))
     
+Running this code should provide the following output.
+
+.. figure:: ../_img/step6output_a.JPG
 
 .. code:: python
 
