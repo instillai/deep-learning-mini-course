@@ -303,13 +303,53 @@ Step 5: Test the Network on Test Data
 -------------------------------------
 Now we have trained our neural network, time to test it on some test data which we defined in step 1.
 
+.. code:: python
+
+    dataiter = iter(testloader)
+    images, labels = dataiter.next()
+    
+    imshow(torchvision.utils.make_grid(images))
+    print('GroundTrute: ', ' '.join('%5s' % classes[labels[j]] for j in range(4)))
+    
+    net = Net()
+    net.load_state_dict(torch.load(PATH))
+    
+    outputs = net(images)
+    
+    _, predicted = torch.max(outputs, 1)
+    print('Predicted: ', ' '.join('%5s' % classes[predicted[j]] for j in range(4)))
+    
+
+.. code:: python
+
+    with torch.no_grad():
+    
+    for data in testloader:
+        images, labels = data
+        outputs = net(images)
+        _, predicted = torch.max(outputs.data, 1)
+        c = (predicted == labels).squeeze()
+        total += labels.size(0)
+        correct += (predicted == labels).sum().item()
+        for i in range(4):
+            label = labels[i]
+            class_correct[label] += c[i].item()
+            class_total[label] += 1
+            
+    print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
+    
+    for i in range(10):
+    print('Accuracy of %5s : %2d %%' % (classes[i], 100 * class_correct[i] / class_total[i]))
+
 
 
 
 ------------------------------------------
 Step 6: Results
 ------------------------------------------
+The output should look something like this..
 
+.. figure:: ../_img/step6output.JPG
 
 
 =============
@@ -319,16 +359,16 @@ This tutorial was inspired by the tutorial provided at https://pytorch.org/docs/
 
 Additional Supplementary References: 
 
-[1] https://pytorch.org/docs/stable/torchvision/transforms.html
-[2] https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html#sphx-glr-beginner-blitz-neural-networks-tutorial-py
-[3] https://pytorch.org/docs/stable/torchvision/transforms.html
-[4] https://pytorch.org/docs/stable/torchvision/datasets.html#cifar
-[5] https://pytorch.org/docs/stable/data.html
-[6] https://pytorch.org/tutorials/beginner/nn_tutorial.html
-[7] https://pytorch.org/docs/stable/nn.html
-[8] https://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-in-pytorch/
-[9] https://pytorch.org/docs/stable/nn.html#torch.nn.CrossEntropyLoss
-[10] https://pytorch.org/docs/stable/optim.html
+[1] https://pytorch.org/docs/stable/torchvision/transforms.html \
+[2] https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html#sphx-glr-beginner-blitz-neural-networks-tutorial-py \
+[3] https://pytorch.org/docs/stable/torchvision/transforms.html \
+[4] https://pytorch.org/docs/stable/torchvision/datasets.html#cifar \
+[5] https://pytorch.org/docs/stable/data.html \
+[6] https://pytorch.org/tutorials/beginner/nn_tutorial.html \
+[7] https://pytorch.org/docs/stable/nn.html \
+[8] https://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-in-pytorch/ \
+[9] https://pytorch.org/docs/stable/nn.html#torch.nn.CrossEntropyLoss \
+[10] https://pytorch.org/docs/stable/optim.html \
 
 =============
 Code
