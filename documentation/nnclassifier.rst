@@ -26,6 +26,8 @@ Convolutional Neural Network
 The architecture that is behind neural networks is always fairly straightforward. While there are many different types of architectures 
 that are used for getting more accurate predictions in specific scenarios, they all involve input nodes and an output node, or "neuron". The input neurons take data about a scenario, and multiple layers on the "inside" of the network calculate what the outcome will be. What makes a neural network "deep" is when there are more than a single layer of neurons between the input and output neurons, as can be seen below. 
 
+For more information on the process of the Convolutional Neural Network (CNN) see [8] https://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-in-pytorch/
+
 
 ===========================================
 Code for a Simple Neural Network Classifier
@@ -161,12 +163,31 @@ The following images contain the console output if the code were to be run as of
 ---------------------------------------------
 Step 2: Define a Convolutional Neural Network
 ---------------------------------------------
-Our Convolutional Neural Network will take 3-channel images. This is where the torch.nn library will be used to define our neural network.
+Now that we have loaded and normalized our dataset, we will define our Neural Network Model. Our Convolutional Neural Network will take 3-channel images. This is where the torch.nn library will be used to define our neural network. For further reading, visit references [6] https://pytorch.org/tutorials/beginner/nn_tutorial.html and [7] https://pytorch.org/docs/stable/nn.html .
 
 .. code:: python
 
-    import matplotlib.pyplot as plt
-    import numpy as np
+    import torch
+    import torch.nn as nn
+    import torch.nn.functional as F
+
+nn.Module is a PyTorch specific base class that we use to model our Neural Network.
+
+For the convolution layer, the Conv2d function applies a 2 dimensional convolution over an input signal composed of several input planes. In this case, it takes in 3 parameters, in_channels(int), out_channels(int), and kernel_size(int). \
+
+**in_channels** is the number of channels in the input image. \
+
+**out_channels** is the number of channels produced by the convolution.\
+
+**kernel_size** is the size of the convolving kernel.\
+
+For the pooling layers, we use the MaxPool2d to apply max pooling over an input signal composed of several planes. In this case, it takes in the input of kernel_size height and weight (kH, kW).  
+
+For the fc1, fc2, and fc3, which are fully-connected layers we define those using the nn.Linear function which applies a linear transformation to the incoming data given 2 parameters in this case. nn.Linear(in_features, out_features). Using these fully-connected layers, we "flatten" the deminesions of the output of our CNN. \
+
+**in_features** is the size of each input sample \
+
+**out_features** is the size of each output sample \
 
 .. code:: python
 
@@ -180,7 +201,7 @@ Our Convolutional Neural Network will take 3-channel images. This is where the t
             self.fc2 = nn.Linear(120, 84)
             self.fc3 = nn.Linear(84, 10)
             
-In this step, we will also define a forward propagation function within the neural network. 
+In this step, we will also define a forward propagation function within the neural network. This step describes the pooling process for the CNN using its properties we defined above. We take x, the input image, then pool using the relu function on its convolution stage and the fully connected layers to return an output.
 
 .. code:: python
 
@@ -200,29 +221,27 @@ Finally, create an instance of your neural network.
     net = Net()
     
     
-    
-
 
 --------------------------------------------
 Step 3: Define a Loss Function and Optimizer
 --------------------------------------------
-In this step we define a loss function and an optimizer. A loss function as discussed in Logistic Regression, Backpropagation, and the Gradient Descent section will map values of one or more variables into a real number representing a cost to an event. In this code snippet we will use the CrossEntropyLoss.
+In this step we define a loss function and an optimizer. A loss function as discussed in Logistic Regression, Backpropagation, and the Gradient Descent section will map values of one or more variables into a real number representing a cost to an event. In this code snippet we will use the CrossEntropyLoss. This is a Loss function defined in PyTorch. There are several alternatives that include L1Loss, MSELoss, CTCLoss, NLLLoss, and many more see [9] https://pytorch.org/docs/stable/nn.html#torch.nn.CrossEntropyLoss for more details on Loss functions. CrossEntropyLoss measures the performance of a classification model which outputs a value between 0 and 1 useful in classification problem with various classes.
 
-And we define it like so..
+And we define it like so in a variable named criterion..
 
 .. code:: python
 
     criterion = nn.CrossEntropyLoss()
     
-When defining our optimizer which will attempt to minimize loss, this is where the torch.optim libary comes into play. 
+When defining our optimizer which will attempt to minimize loss, this is where the torch.optim libary comes into play.
 
 .. code:: python
 
     import torch.optim as optim
 
-In this code snippet, we will use SGD which stands for Stochastic Gradient Descent.
+In this code snippet, we will use SGD which stands for Stochastic Gradient Descent. This optimizer object holds the current state and updates parameters based on the computed gradients. The simple update rule is weight = weight - learning_rate * gradient. For more information on SGD and other alternatives for optimizers see [10] https://pytorch.org/docs/stable/optim.html
 
-And we define the optimizer like so..
+And we define the optimizer like so in a variable named optimizer.. lr is the learning rate and momentum is the momentum factor. net.parameters() is our neural net attributes.
 
 .. code:: python
 
@@ -233,7 +252,11 @@ And we define the optimizer like so..
 -------------------------------------
 Step 4: Training the Network
 -------------------------------------
-At this point, we have defined our dataset, our Convolutional Neural Network, forward propagation, loss function, and optimizer. Therefore, we will train the neural network.
+At this point, we have defined our dataset, our Convolutional Neural Network, forward propagation, loss function, and optimizer. Now, we will train the neural network. \
+
+An epoch is a complete presentation of the data set. As we iterate through the epoch, we will also iterate through the trainloader previous defined. We want to create an input and label variable of the data in trainloader and perform a zero_grad optimization which clears the gradients of all optimized tensors before performing backpropagation with the loss function since PyTorch accumulates the gradients on subsequent backward passes. Then we put the inputs through the neural net by net(inputs). \
+
+We then perform the loss function by calling criterion on our outputs and labels. Then call loss.backward() which computes the loss for every parameter x which is then accumulated into the gradient. Then we apply the optimizer.step() method that updates the parameter that performs a single optimization step. Add the loss item into the running_loss variable.
 
 .. code:: python
 
@@ -241,7 +264,7 @@ At this point, we have defined our dataset, our Convolutional Neural Network, fo
         running_loss = 0.0
         for i, data in enumerate(trainloader, 0):
             inputs, labels = data
-            optimizer.zero_grad() # Why?
+            optimizer.zero_grad()
             outputs = net(inputs)
             loss = criterion(outputs, labels)
             loss.backward()
@@ -255,9 +278,32 @@ At this point, we have defined our dataset, our Convolutional Neural Network, fo
     
     print('Finished Training')
 
+In this code, we print the running_loss every 2000 iteration and reset to 0. The output should look something like this.. You should be able to see the loss decrease as the training iterations increase.
+
+.. code:: python
+
+    [1,  2000] loss: 2.211
+    [1,  4000] loss: 1.824
+    [1,  6000] loss: 1.649
+    [1,  8000] loss: 1.560
+    [1, 10000] loss: 1.500
+    [1, 12000] loss: 1.460
+    [2,  2000] loss: 1.376
+    [2,  4000] loss: 1.370
+    [2,  6000] loss: 1.333
+    [2,  8000] loss: 1.300
+    [2, 10000] loss: 1.321
+    [2, 12000] loss: 1.272
+    Finished Training
+
+    
+
 -------------------------------------
 Step 5: Test the Network on Test Data
 -------------------------------------
+Now we have trained our neural network, time to test it on some test data which we defined in step 1.
+
+
 
 
 ------------------------------------------
@@ -277,6 +323,12 @@ Additional Supplementary References:
 [2] https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html#sphx-glr-beginner-blitz-neural-networks-tutorial-py
 [3] https://pytorch.org/docs/stable/torchvision/transforms.html
 [4] https://pytorch.org/docs/stable/torchvision/datasets.html#cifar
+[5] https://pytorch.org/docs/stable/data.html
+[6] https://pytorch.org/tutorials/beginner/nn_tutorial.html
+[7] https://pytorch.org/docs/stable/nn.html
+[8] https://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-in-pytorch/
+[9] https://pytorch.org/docs/stable/nn.html#torch.nn.CrossEntropyLoss
+[10] https://pytorch.org/docs/stable/optim.html
 
 =============
 Code
