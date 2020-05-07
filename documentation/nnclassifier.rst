@@ -333,21 +333,33 @@ Running this code should provide the following output.
 
 .. figure:: ../_img/step6output_a.JPG
 
+You have just created a Neural Network Classifier. Now let's test on the whole dataset. \
+
+We will calculate correctness on the entire data set as well as each class of images. Keep a variable count variable for correct and total. 
+
+.. code:: python
+
+    correct = 0
+    total = 0
+    class_correct = list(0. for i in range(10))
+    class_total = list(0. for i in range(10))
+    
+torch.no_grad() is a context manager that disables gradient calculation. It reduces memory consumption for computations that would otherwise have gradient requirements set to be true. 
+    
 .. code:: python
 
     with torch.no_grad():
-    
-    for data in testloader:
-        images, labels = data
-        outputs = net(images)
-        _, predicted = torch.max(outputs.data, 1)
-        c = (predicted == labels).squeeze()
-        total += labels.size(0)
-        correct += (predicted == labels).sum().item()
-        for i in range(4):
-            label = labels[i]
-            class_correct[label] += c[i].item()
-            class_total[label] += 1
+        for data in testloader:
+            images, labels = data
+            outputs = net(images)
+            _, predicted = torch.max(outputs.data, 1)
+            c = (predicted == labels).squeeze()
+            total += labels.size(0)
+            correct += (predicted == labels).sum().item()
+            for i in range(4):
+                label = labels[i]
+                class_correct[label] += c[i].item()
+                class_total[label] += 1
             
     print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
     
