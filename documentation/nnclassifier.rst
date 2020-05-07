@@ -57,7 +57,7 @@ In addition to the dataset we will need to import matplotlib and numpy to plot t
 --------------------------------
 Step 1: Data - CIFAR10
 --------------------------------
-Load and Nomralize CIFAR10 dataset
+Load and Nomralize CIFAR10 dataset. The following code block is a complete code block of this step. We will break it down further and explain each function and variable.
 
 .. code:: python
     
@@ -65,13 +65,37 @@ Load and Nomralize CIFAR10 dataset
     
     trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
     
-    trainloader = torch.utils.data.DataLoader(trainset, batch_size=4,shuffle=True, num_workers=2)
-    
     testset = torchvision.datasets.CIFAR10(root='./data', train = False, download=True, transform=transform)
+    
+    trainloader = torch.utils.data.DataLoader(trainset, batch_size=4,shuffle=True, num_workers=2)
     
     testloader = torch.utils.data.DataLoader(testset, batch_size=4,shuffle=False, num_workers=2)
     
     classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+    
+    
+The following line creates a transforms variable used to create training sets and data sets, it is a list of transforms which is created by transforms.Compose() function. The output of the torchivision dataset we are using in this example are PIL images of range [0, 1]. We use transforms.Compose() as a function to compose several image transformations together. Within the parameters of the Compose function, we state transforms.ToTensor() covert the PIL image to a tensor which is a generalization of vectors and matrices representing a multidimensional array which will be processed as the data input. transforms.Normalize() takes in Tensor image size (C, H, W) as a parameter and normalizes a tensor image with mean and standard deviation.
+
+.. code:: python
+
+    transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,0.5,0.5),(0.5,0.5,0.5))])
+    
+Now we define training set and a test set with the CIFAR10 dataset. There are many data sets that could be used using the torchvision library such as MNIST, Flickr, USPS, KMNIST, and many more. For this example we use the CIFAR10 dataset explained earlier on this page. The parameters are root, train, transform, and download. \\
+
+Root \\
+
+train \\
+
+transform \\
+download \\
+
+.. code:: python
+    
+    trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
+    
+    testset = torchvision.datasets.CIFAR10(root='./data', train = False, download=True, transform=transform)
+
+
     
 The following code snippets will be functions that will get and plot some image files from the CIFAR10 dataset which we loaded in the code snippet shown above. In this snippet we will use numpy and matplotlib to show the images.
 
@@ -214,6 +238,7 @@ Additional Supplementary References:
 - https://pytorch.org/docs/stable/torchvision/transforms.html
 - https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html#sphx-glr-beginner-blitz-neural-networks-tutorial-py
 - https://pytorch.org/docs/stable/torchvision/transforms.html
+- 
 
 =============
 Code
